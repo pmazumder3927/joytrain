@@ -1,0 +1,164 @@
+title: "Block 1 W1D3 — Deadlift + Posterior + Power"
+folder: "Block 1 — Restart"
+notes: |
+  MACROCYCLE 1 / BLOCK 1 / WEEK 1 / DAY 3.
+
+  Source: Block 9 W1D5 (training-history.md "Week 1 Day 5 —
+  deadlift/full-body power"). D3 anchor = Deadlift with the explicit
+  ramping pattern 5,5,5,3,3,3 @ 65/68/70/72/75/78%. We mirror the
+  6-working-set ascending structure but use absolute loads since no
+  current 1RM. Assume conservative ~315 lb 1RM seed → top single 245 lb.
+
+  THEMES: hinge volume, single-leg posterior chain, athletic power
+  (slams), loaded carries. Block 9 was very clear about this day being
+  "full-body power" — keep the slam/carry primal feel.
+
+  CUES:
+    - Deadlift: brace BEFORE pulling slack. Wedge into the bar. Hips
+      and shoulders rise together off the floor — no goodmornings.
+      Reset between every rep (no touch-and-go on the heavier sets).
+    - Hollow Body Hold: lower back PRESSED into floor. If it lifts,
+      bend the knees more or shorten the lever.
+    - Rear-foot elevated split squat: front shin vertical, slow down,
+      drive through the front heel. 6 reps EACH leg.
+    - Toe-elevated DB RDL: stand on a plate (toes on, heels off). This
+      shifts load to the hamstrings/glutes. Hinge, don't squat.
+    - 1-arm DB push press: dip-drive-press. Use leg drive — that's
+      what makes this a "push" press, not a strict press. Switch arms.
+    - Farmer carry: chest up, ribs down, breathe. 100 ft per set.
+    - Ball slams: throw it at the ground like you mean it. Bend knees
+      to catch the bounce, repeat. 5 reps explosive.
+
+exercises:
+  # ----- WARMUP (deadlift day from Block 1) -----
+
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: |
+      WARMUP 1/5 — row 500m OR jump rope 4-5 min. Get warm + a little
+      sweaty before loading the bar.
+    sets:
+      - { duration_seconds: 300, type: warmup }
+
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: |
+      WARMUP 2/5 — goblet style, 10 each leg. Block 1 deadlift-day
+      warmup. Light DB (20-25 lb).
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: |
+      WARMUP 3/5 — shoulder prehab. Light. 1×15. Squeeze lower traps.
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: |
+      WARMUP 4/5 — CNS primer. Low-moderate box. Soft land, stand up,
+      step down. 1×5.
+    sets:
+      - { reps: 5, type: warmup }
+
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
+    rest_seconds: 30
+    notes: |
+      WARMUP 5/5 — bracing primer. 8 walkouts. Light band at the wrists.
+    sets:
+      - { reps: 8, type: warmup }
+
+  # ----- MAIN WORK -----
+
+  - exercise: "Deadlift (Barbell)"
+    rest_seconds: 240
+    notes: |
+      ANCHOR LIFT. Block 9 W1D5 spec: 5,5,5,3,3,3 @ 65/68/70/72/75/78%.
+      6 working sets ascending. Top set 225 lb @ RPE 7 (conservative
+      seed assuming ~315 lb 1RM — recalibrate after today).
+      Reset between every rep on the heavier triples.
+    sets:
+      - { reps: 5, weight_lb: 135, type: warmup }
+      - { reps: 5, weight_lb: 165, type: warmup }
+      - { reps: 5, weight_lb: 185, rpe: 7 }
+      - { reps: 5, weight_lb: 195, rpe: 7 }
+      - { reps: 5, weight_lb: 205, rpe: 7 }
+      - { reps: 3, weight_lb: 215, rpe: 7 }
+      - { reps: 3, weight_lb: 225, rpe: 7 }
+      - { reps: 3, weight_lb: 235, rpe: 7.5 }
+
+  - exercise: "8c2bbcb2-cf0f-4029-aa77-c294f6e7a693"  # Hollow Body Hold
+    rest_seconds: 60
+    notes: |
+      Block 9 W1D5 spec: 4×45 sec. Anti-extension core. Low back glued
+      to floor — if it lifts, bend knees to shorten lever.
+    sets:
+      - { count: 4, duration_seconds: 45 }
+
+  - superset: A
+    exercise: "Bulgarian Split Squat"
+    rest_seconds: 75
+    notes: |
+      Block 9 W1D5 spec "DB Rear Foot Elevated Split Squat — 3×6".
+      Hold a DB in each hand (25 lb). 6 EACH leg. Front shin vertical.
+    sets:
+      - { count: 3, reps: 6, weight_lb: 25 }
+
+  - superset: A
+    exercise: "Romanian Deadlift (Dumbbell)"
+    rest_seconds: 75
+    notes: |
+      Block 9 W1D5 spec "Toe Elevated DB RDL — 3×6". Stand with toes on
+      a plate (heels lower). Hinge from hips. Slow eccentric, hamstrings
+      should scream.
+    sets:
+      - { count: 3, reps: 6, weight_lb: 45 }
+
+  - exercise: "Push Press"
+    rest_seconds: 90
+    notes: |
+      Block 9 W1D5 spec "1 Arm DB Push Press — 3×5". Use ONE dumbbell
+      held at the shoulder. Dip-drive-press, alternating arms. 5 reps
+      EACH arm. (Logging as Push Press since the movement pattern is
+      identical; pretend the bar is a single DB.)
+    sets:
+      - { count: 3, reps: 5, weight_lb: 35 }
+
+  - exercise: "Farmers Walk"
+    rest_seconds: 120
+    notes: |
+      Block 9 W1D5 spec "Trap Bar Farmer Carry — 3×100 ft". Use a trap
+      bar loaded heavy (~155-185 lb total). If no trap bar, heavy DBs
+      in each hand. Logged as distance (~30m = 100 ft).
+    sets:
+      - { count: 3, distance_meters: 30, weight_lb: 155 }
+
+  - exercise: "Ball Slams"
+    rest_seconds: 60
+    notes: |
+      Block 9 W1D5 spec "Med Ball Slam — 4×5". Explosive. Throw it
+      DOWN. Catch the bounce, reset, repeat. 4×5.
+    sets:
+      - { count: 4, reps: 5 }
+
+  - superset: B
+    exercise: "fafd204e-ed13-4ec5-a764-43e8743d3935"  # Single Leg Banded Hamstring Curl
+    rest_seconds: 45
+    notes: |
+      Block 9 W1D5 spec "Single Leg Banded Hamstring Curl — 2×20".
+      Anchor a band low (or use rack base). Lie face down, loop around
+      one ankle, curl the heel to the glute. 20 reps EACH leg.
+    sets:
+      - { count: 2, reps: 20 }
+
+  - superset: B
+    exercise: "Leg Extension (Machine)"
+    rest_seconds: 45
+    notes: |
+      Block 9 W1D5 spec "Kneeling Leg Extension — 2×20". Use the
+      machine seated — squeeze quads HARD at the top, slow eccentric.
+      2×20, moderate weight.
+    sets:
+      - { count: 2, reps: 20, weight_lb: 70 }

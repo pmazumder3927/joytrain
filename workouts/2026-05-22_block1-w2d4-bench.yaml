@@ -1,0 +1,92 @@
+title: "Block 1 W2D4 — Bench + Upper Accessories + Arms"
+folder: "Block 1 — Restart"
+notes: |
+  BLOCK 1 / WEEK 2 / DAY 4.
+
+  W2 progression: +5 lb on bench top set, RPE 7.5.
+  See W1D4 (`2026-05-15_block1-w1d4-bench.yaml`) for full cues.
+
+exercises:
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5 — row 500m or jump rope 4-5 min."
+    sets:
+      - { duration_seconds: 300, type: warmup }
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5 — goblet, 10 each leg."
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 3/5 — 1×15."
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: "WARMUP 4/5 — 1×5."
+    sets:
+      - { reps: 5, type: warmup }
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
+    rest_seconds: 30
+    notes: "WARMUP 5/5 — 8 walkouts."
+    sets:
+      - { reps: 8, type: warmup }
+
+  - exercise: "Bench Press (Barbell)"
+    rest_seconds: 180
+    notes: "ANCHOR. 4×6 working, +5 lb on top set vs W1."
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 5, weight_lb: 95, type: warmup }
+      - { reps: 3, weight_lb: 115, type: warmup }
+      - { reps: 6, weight_lb: 120, rpe: 7 }
+      - { reps: 6, weight_lb: 130, rpe: 7 }
+      - { reps: 6, weight_lb: 140, rpe: 7.5 }
+      - { reps: 6, weight_lb: 140, rpe: 7.5 }
+
+  - exercise: "32d79e65-eb2a-4ae9-8561-f81a3c71bbad"  # Chest Supported External Rotation
+    rest_seconds: 60
+    notes: "Prehab. 4×10, light DBs (5-10 lb)."
+    sets:
+      - { count: 4, reps: 10, weight_lb: 8 }
+
+  - exercise: "Pause Squat (Barbell)"
+    rest_seconds: 150
+    notes: "Secondary. 5×3 @ +5 lb over W1."
+    sets:
+      - { count: 5, reps: 3, weight_lb: 120, rpe: 6 }
+
+  - exercise: "Bench Press (Dumbbell)"
+    rest_seconds: 90
+    notes: "Alternating DB bench. 8 each arm. Last set MAX. +5 lb."
+    sets:
+      - { reps: 16, weight_lb: 40 }
+      - { reps: 16, weight_lb: 40 }
+      - { reps: 16, weight_lb: 40 }
+      - { reps: 24, weight_lb: 35, type: failure }
+
+  - exercise: "45e60221-6618-4055-9f14-9611e353df79"  # Suitcase Deadlift
+    rest_seconds: 75
+    notes: "3×12 each side. Heavier KB if W1 was easy."
+    sets:
+      - { count: 3, reps: 24, weight_lb: 62 }
+
+  - superset: A
+    exercise: "Bicep Curl (Barbell)"
+    rest_seconds: 60
+    notes: "3×8 strict. +5 lb."
+    sets:
+      - { count: 3, reps: 8, weight_lb: 70 }
+  - superset: A
+    exercise: "Skullcrusher (Barbell)"
+    rest_seconds: 60
+    notes: "3×8 EZ bar. +5 lb."
+    sets:
+      - { count: 3, reps: 8, weight_lb: 60 }
+  - superset: A
+    exercise: "Chest Fly (Dumbbell)"
+    rest_seconds: 60
+    notes: "3×8. +2-5 lb."
+    sets:
+      - { count: 3, reps: 8, weight_lb: 35 }

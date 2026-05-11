@@ -1,0 +1,67 @@
+title: "Block 1 W4D3 — Deadlift Deload"
+folder: "Block 1 — Restart"
+notes: |
+  BLOCK 1 / WEEK 4 / DAY 3 — DELOAD.
+
+  Deadlift deload. ~70% of W1 top. RPE 6.5. Skip slams + carries.
+
+exercises:
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5."
+    sets:
+      - { duration_seconds: 300, type: warmup }
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5."
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 3/5."
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: "WARMUP 4/5."
+    sets:
+      - { reps: 5, type: warmup }
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
+    rest_seconds: 30
+    notes: "WARMUP 5/5."
+    sets:
+      - { reps: 8, type: warmup }
+
+  - exercise: "Deadlift (Barbell)"
+    rest_seconds: 180
+    notes: "DELOAD. 3×5 @ RPE 6-6.5. Bar speed CRISP, full reset each rep."
+    sets:
+      - { reps: 5, weight_lb: 135, type: warmup }
+      - { reps: 5, weight_lb: 165, rpe: 6 }
+      - { reps: 5, weight_lb: 175, rpe: 6 }
+      - { reps: 5, weight_lb: 175, rpe: 6 }
+
+  - exercise: "8c2bbcb2-cf0f-4029-aa77-c294f6e7a693"  # Hollow Body Hold
+    rest_seconds: 45
+    notes: "DELOAD. 2×30 sec."
+    sets:
+      - { count: 2, duration_seconds: 30 }
+
+  - superset: A
+    exercise: "Bulgarian Split Squat"
+    rest_seconds: 45
+    notes: "DELOAD. 2×6 each, bodyweight."
+    sets:
+      - { count: 2, reps: 6 }
+  - superset: A
+    exercise: "Romanian Deadlift (Dumbbell)"
+    rest_seconds: 45
+    notes: "DELOAD. 2×8 light."
+    sets:
+      - { count: 2, reps: 8, weight_lb: 35 }
+
+  - exercise: "Farmers Walk"
+    rest_seconds: 90
+    notes: "Keep one set as movement maintenance. Light, ~100 ft."
+    sets:
+      - { count: 1, distance_meters: 30, weight_lb: 115 }

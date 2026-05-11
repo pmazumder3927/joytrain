@@ -1,0 +1,160 @@
+title: "Block 1 W1D2 — Strict Press + Upper Pull + Arms"
+folder: "Block 1 — Restart"
+notes: |
+  MACROCYCLE 1 / BLOCK 1 / WEEK 1 / DAY 2.
+
+  Source: Block 9 W1D4 (training-history.md "Week 1 Day 4 — strict press
+  / upper pull"). D2 anchor = Strict Press, paired with pull-ups + arm
+  volume. Block 9 spec is 5 working sets of the press mixed 3,3,3,5,5
+  — heavy triples then back-off fives.
+
+  WEEK 1 INTENT: calibrate the OHP top set. Source from 2022 had a 95%
+  top set ~135 lb; today we start light (75 lb top triple) because no
+  current 1RM data. If 75 feels lighter than RPE 7.5, push to 80 and
+  log it — W2 needs to follow.
+
+  CUES:
+    - OHP: brace abs hard, no leg drive, glutes squeeze, ribs down.
+      Bar path: face out of the way, then drift forward to lockout.
+    - Pull-Up: dead hang each rep. If sets of 5 aren't there yet, drop
+      to negatives or use a band. Don't compromise full ROM.
+    - Single-arm seated press: keep the non-working arm pressed against
+      the bench to anti-rotate. Slow eccentric.
+    - Reverse fly: thumbs slightly up, drive elbows back, not up.
+    - Finisher: face pulls + tricep pushdowns are HIGH REP. Pick a
+      weight you could do 25-30 with — then push 20 reps × 4 sets.
+      Block 9 source coach note: "Heavier" — you should feel a deep
+      delt/tri pump.
+
+exercises:
+  # ----- WARMUP (upper day template from Block 1 upper warmup) -----
+
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5 — row 500m OR jump rope 3 min. Warm shoulders + lats."
+    sets:
+      - { duration_seconds: 240, type: warmup }
+
+  - exercise: "Single Leg Romanian Deadlift (Dumbbell)"
+    rest_seconds: 30
+    notes: |
+      WARMUP 2/5 — substitute for Block 1 "Wall Press 1 Leg RDL" warmup
+      (same movement minus the wall). Light DB (15-20 lb). 2×10 each leg.
+    sets:
+      - { count: 2, reps: 10, weight_lb: 15, type: warmup }
+
+  - exercise: "Face Pull"
+    rest_seconds: 30
+    notes: |
+      WARMUP 3/5 — Block 1 upper warmup spec "banded face pull + OHP".
+      Cable or band. Light. 2×12. Elbows high, thumbs back.
+    sets:
+      - { count: 2, reps: 12, weight_lb: 30, type: warmup }
+
+  - exercise: "Side Plank"
+    rest_seconds: 30
+    notes: |
+      WARMUP 4/5 — Block 1 upper warmup spec "Star Side Plank — 2×30 sec
+      each". Sub regular side plank; raise top leg toward the ceiling to
+      get the star variation. 30s each side.
+    sets:
+      - { count: 2, duration_seconds: 30, type: warmup }
+
+  - exercise: "Split Squat (Dumbbell)"
+    rest_seconds: 30
+    notes: |
+      WARMUP 5/5 — Block 1 upper warmup spec "Split Squat Jumps — 2×10
+      each". Light DBs. Sub jumps with explosive bodyweight split squats.
+      2×10 each leg, full extension at top.
+    sets:
+      - { count: 2, reps: 10, weight_lb: 15, type: warmup }
+
+  # ----- MAIN WORK -----
+
+  - exercise: "Overhead Press (Barbell)"
+    rest_seconds: 180
+    notes: |
+      ANCHOR LIFT. Block 9 W1D4 spec: 3,3,3,5,5.
+      Triples ascend in weight, then back-off fives for volume.
+      Calibrate at RPE 7.5 — if the 75 lb triple is easy, jump to 80.
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 3, weight_lb: 55, type: warmup }
+      - { reps: 3, weight_lb: 65, rpe: 7 }
+      - { reps: 3, weight_lb: 70, rpe: 7.5 }
+      - { reps: 3, weight_lb: 75, rpe: 7.5 }
+      - { reps: 5, weight_lb: 65, rpe: 7 }
+      - { reps: 5, weight_lb: 65, rpe: 7 }
+
+  - exercise: "Pull Up"
+    rest_seconds: 150
+    notes: |
+      Block 9 W1D4 spec: 5×5. Dead hang each rep. If unable to do 5
+      strict, scale to band-assisted Pull Up or negatives — log it.
+    sets:
+      - { count: 5, reps: 5 }
+
+  - superset: A
+    exercise: "Shoulder Press (Dumbbell)"
+    rest_seconds: 60
+    notes: |
+      Block 9 W1D4 spec "1 Arm Seated Press — 3×6". Single-arm, seated,
+      back supported. Press one DB overhead, alternating arms. 6 reps
+      EACH arm per set. Brace anti-lateral-flexion.
+    sets:
+      - { count: 3, reps: 6, weight_lb: 35 }
+
+  - superset: A
+    exercise: "Lat Pulldown - Close Grip (Cable)"
+    rest_seconds: 60
+    notes: |
+      Block 9 W1D4 spec "Chin Pulldown — 3×6". Underhand (chin) grip,
+      shoulder-width, drive elbows down into the lats.
+    sets:
+      - { count: 3, reps: 6, weight_lb: 110 }
+
+  - superset: B
+    exercise: "Goblet Squat"
+    rest_seconds: 60
+    notes: |
+      Block 9 W1D4 spec "Goblet Squat — 3×10". Pure secondary volume.
+      Slow eccentric, elbows in. Lower-body filler on a press day.
+    sets:
+      - { count: 3, reps: 10, weight_lb: 40 }
+
+  - superset: B
+    exercise: "Seated Cable Row - V Grip (Cable)"
+    rest_seconds: 60
+    notes: |
+      Block 9 W1D4 spec "Seated Cable Row — 3×10". Chest up, drive
+      elbows back, squeeze mid-back at end range.
+    sets:
+      - { count: 3, reps: 10, weight_lb: 110 }
+
+  - exercise: "Chest Supported Reverse Fly (Dumbbell)"
+    rest_seconds: 60
+    notes: |
+      Block 9 W1D4 spec "Chest Supported Reverse Fly — 3×12". Incline
+      bench, face down. Thumbs slightly up, drive elbows back/wide.
+    sets:
+      - { count: 3, reps: 12, weight_lb: 15 }
+
+  # ----- FINISHER (Block 9 W1D4 spec, "Heavier" coach note) -----
+
+  - superset: C
+    exercise: "Face Pull"
+    rest_seconds: 30
+    notes: |
+      FINISHER 1/2 — Block 9 spec "Cable Face Pull — 80 reps". Broken
+      into 4×20. PICK A WEIGHT YOU CAN DO 25-30 OF — these should burn.
+    sets:
+      - { count: 4, reps: 20, weight_lb: 40 }
+
+  - superset: C
+    exercise: "Triceps Rope Pushdown"
+    rest_seconds: 30
+    notes: |
+      FINISHER 2/2 — Block 9 spec "Cable Tricep Push Down — 80 reps".
+      4×20. Squeeze at the bottom, full extension. Heavier than usual.
+    sets:
+      - { count: 4, reps: 20, weight_lb: 50 }

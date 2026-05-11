@@ -1,0 +1,148 @@
+title: "Block 1 W1D4 — Bench + Upper Accessories + Arms"
+folder: "Block 1 — Restart"
+notes: |
+  MACROCYCLE 1 / BLOCK 1 / WEEK 1 / DAY 4.
+
+  Source: Block 8 W5D2 (training-history.md "Week 5 Day 2" — Bench
+  Press + Chest Supported External Rotation + Pause Back Squat). Block
+  9 didn't expose a D-bench day in Gmail, so we pull the bench template
+  from the Block 8 strength block but at restart loads. Pause squat
+  appears here as a SECONDARY movement (5×3 @ moderate %), not the D1
+  anchor — Block 8 ran bench-day with pause squat doubled in.
+
+  WEEK 1 INTENT: anchor a bench top set at RPE 7 (conservative). The
+  pause squat is volume only — keep it well under D1 loads.
+
+  CUES:
+    - Bench: feet planted, slight arch, scaps retracted. Pause briefly
+      on the chest, no bouncing. Bar path slightly back to the rack.
+    - External rotation: elbow pinned to side, slow controlled
+      external rotation. Light weight — feel the rear cuff.
+    - Pause Squat (secondary): same cues as D1, but lighter. This is
+      pump volume, not strength.
+    - Alternating DB Bench: one arm presses while the other holds in
+      the bottom position. Slow, controlled, anti-rotate.
+    - Suitcase Deadlift: one KB at one side. STAY VERTICAL — don't
+      lean toward the weight. Core fights the lateral pull.
+    - Arm circuit: heavy. Block 8 source coach intent — 3-second
+      eccentrics on the curls, control on the skullcrushers.
+
+exercises:
+  # ----- WARMUP (Block 8 W5 warmup template) -----
+
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5 — row 500m OR jump rope 4-5 min."
+    sets:
+      - { duration_seconds: 300, type: warmup }
+
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5 — goblet style, 10 each leg, light."
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 3/5 — shoulder prehab. 1×15, very light."
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: "WARMUP 4/5 — CNS primer. 1×5, soft land."
+    sets:
+      - { reps: 5, type: warmup }
+
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
+    rest_seconds: 30
+    notes: "WARMUP 5/5 — bracing primer. 8 walkouts."
+    sets:
+      - { reps: 8, type: warmup }
+
+  # ----- MAIN WORK -----
+
+  - exercise: "Bench Press (Barbell)"
+    rest_seconds: 180
+    notes: |
+      ANCHOR LIFT. Block 8 W5D2 spec: 4×6 or 4×8 (variant).
+      W1 calibration: ramping warmup, then 4 working sets of 6 at
+      RPE 7. Top set 135 lb. If it's RPE < 6, bump to 145 next set.
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 5, weight_lb: 95, type: warmup }
+      - { reps: 3, weight_lb: 115, type: warmup }
+      - { reps: 6, weight_lb: 115, rpe: 7 }
+      - { reps: 6, weight_lb: 125, rpe: 7 }
+      - { reps: 6, weight_lb: 135, rpe: 7 }
+      - { reps: 6, weight_lb: 135, rpe: 7.5 }
+
+  - exercise: "32d79e65-eb2a-4ae9-8561-f81a3c71bbad"  # Chest Supported External Rotation
+    rest_seconds: 60
+    notes: |
+      Block 8 W5D2 spec: 4×10. Lay face-down on an incline bench. Light
+      DBs (5-10 lb). Elbow pinned at 90°, externally rotate the DB up.
+      This is PREHAB. Don't ego-load.
+    sets:
+      - { count: 4, reps: 10, weight_lb: 8 }
+
+  - exercise: "Pause Squat (Barbell)"
+    rest_seconds: 150
+    notes: |
+      SECONDARY MOVEMENT. Block 8 W5D2 spec: 5×3 @ 165-180 lb (their
+      working weights). For W1 restart we use SUB-D1 weight — this is
+      volume to reinforce the pattern, not a strength stimulus.
+      1s pause at bottom every rep.
+    sets:
+      - { count: 5, reps: 3, weight_lb: 115, rpe: 6 }
+
+  - exercise: "Bench Press (Dumbbell)"
+    rest_seconds: 90
+    notes: |
+      Block 8 W5D2 spec: "Alternating DB Bench Press — 8,8,8,12 @ final
+      set MAX". Alternating means: press right, hold left at bottom;
+      press left, hold right at bottom. 8 reps EACH arm = 16 total per
+      set. Last set is rep MAX.
+    sets:
+      - { reps: 16, weight_lb: 35 }
+      - { reps: 16, weight_lb: 35 }
+      - { reps: 16, weight_lb: 35 }
+      - { reps: 24, weight_lb: 30, type: failure }
+
+  - exercise: "45e60221-6618-4055-9f14-9611e353df79"  # Suitcase Deadlift
+    rest_seconds: 75
+    notes: |
+      Block 8 W5D2 spec "KB Suitcase Deadlift — 3×12". One heavy KB at
+      one side. Deadlift it. STAY VERTICAL — that's the whole point.
+      12 each side per set.
+    sets:
+      - { count: 3, reps: 24, weight_lb: 53 }
+
+  # ----- ARM CIRCUIT (Block 8 W5D2 heavy circuit) -----
+
+  - superset: A
+    exercise: "Bicep Curl (Barbell)"
+    rest_seconds: 60
+    notes: |
+      Block 8 spec "Barbell Bicep Curls — 3×8". Strict, no swing,
+      3-sec eccentric. Heavy enough that 8 is hard.
+    sets:
+      - { count: 3, reps: 8, weight_lb: 65 }
+
+  - superset: A
+    exercise: "Skullcrusher (Barbell)"
+    rest_seconds: 60
+    notes: |
+      Block 8 spec "Barbell Skull Crushers — 3×8". EZ bar if available.
+      Lower to forehead, control. Don't flare elbows.
+    sets:
+      - { count: 3, reps: 8, weight_lb: 55 }
+
+  - superset: A
+    exercise: "Chest Fly (Dumbbell)"
+    rest_seconds: 60
+    notes: |
+      Block 8 spec "DB Chest Fly — 3×8". Slight elbow bend, control.
+      Don't let DBs drift below shoulder line at bottom.
+    sets:
+      - { count: 3, reps: 8, weight_lb: 30 }

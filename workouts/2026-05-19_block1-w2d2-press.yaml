@@ -1,0 +1,99 @@
+title: "Block 1 W2D2 — Strict Press + Upper Pull + Arms"
+folder: "Block 1 — Restart"
+notes: |
+  BLOCK 1 / WEEK 2 / DAY 2.
+
+  W2 progression: +5 lb on OHP top triple, RPE 7.5.
+  See W1D2 (`2026-05-12_block1-w1d2-press.yaml`) for full cues.
+
+  Pull-Up should go up by 1 rep/set if W1 strict 5s landed clean.
+
+exercises:
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5 — row 500m or jump rope 3 min."
+    sets:
+      - { duration_seconds: 240, type: warmup }
+  - exercise: "Single Leg Romanian Deadlift (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5 — Block 1 wall-press SLRDL sub. 2×10 each."
+    sets:
+      - { count: 2, reps: 10, weight_lb: 15, type: warmup }
+  - exercise: "Face Pull"
+    rest_seconds: 30
+    notes: "WARMUP 3/5 — light, 2×12."
+    sets:
+      - { count: 2, reps: 12, weight_lb: 30, type: warmup }
+  - exercise: "Side Plank"
+    rest_seconds: 30
+    notes: "WARMUP 4/5 — star variation, 30s each side, 2 rounds."
+    sets:
+      - { count: 2, duration_seconds: 30, type: warmup }
+  - exercise: "Split Squat (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 5/5 — explosive bodyweight or light DBs."
+    sets:
+      - { count: 2, reps: 10, weight_lb: 15, type: warmup }
+
+  - exercise: "Overhead Press (Barbell)"
+    rest_seconds: 180
+    notes: "ANCHOR. 3,3,3,5,5 pattern. +5 lb on top triple from W1."
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 3, weight_lb: 65, type: warmup }
+      - { reps: 3, weight_lb: 70, rpe: 7 }
+      - { reps: 3, weight_lb: 75, rpe: 7.5 }
+      - { reps: 3, weight_lb: 80, rpe: 7.5 }
+      - { reps: 5, weight_lb: 70, rpe: 7 }
+      - { reps: 5, weight_lb: 70, rpe: 7 }
+
+  - exercise: "Pull Up"
+    rest_seconds: 150
+    notes: "5×5. Add a rep/set if W1 strict was easy. Or 5×6."
+    sets:
+      - { count: 5, reps: 6 }
+
+  - superset: A
+    exercise: "Shoulder Press (Dumbbell)"
+    rest_seconds: 60
+    notes: "Single-arm seated. 6 each arm. +5 lb over W1."
+    sets:
+      - { count: 3, reps: 6, weight_lb: 40 }
+  - superset: A
+    exercise: "Lat Pulldown - Close Grip (Cable)"
+    rest_seconds: 60
+    notes: "Chin grip. +10 lb over W1."
+    sets:
+      - { count: 3, reps: 6, weight_lb: 120 }
+
+  - superset: B
+    exercise: "Goblet Squat"
+    rest_seconds: 60
+    notes: "3×10 secondary volume."
+    sets:
+      - { count: 3, reps: 10, weight_lb: 45 }
+  - superset: B
+    exercise: "Seated Cable Row - V Grip (Cable)"
+    rest_seconds: 60
+    notes: "3×10. +10 lb over W1."
+    sets:
+      - { count: 3, reps: 10, weight_lb: 120 }
+
+  - exercise: "Chest Supported Reverse Fly (Dumbbell)"
+    rest_seconds: 60
+    notes: "3×12, +2-3 lb."
+    sets:
+      - { count: 3, reps: 12, weight_lb: 17 }
+
+  - superset: C
+    exercise: "Face Pull"
+    rest_seconds: 30
+    notes: "FINISHER 1/2 — 80 reps total broken into 4×20. Same load or +5."
+    sets:
+      - { count: 4, reps: 20, weight_lb: 45 }
+  - superset: C
+    exercise: "Triceps Rope Pushdown"
+    rest_seconds: 30
+    notes: "FINISHER 2/2 — 4×20. +5 lb over W1."
+    sets:
+      - { count: 4, reps: 20, weight_lb: 55 }

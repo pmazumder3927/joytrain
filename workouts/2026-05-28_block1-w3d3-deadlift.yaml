@@ -1,0 +1,98 @@
+title: "Block 1 W3D3 — Deadlift + Posterior + Power"
+folder: "Block 1 — Restart"
+notes: |
+  BLOCK 1 / WEEK 3 / DAY 3.
+
+  W3 push week — deadlift top single 245 @ RPE 8.
+  See W1D3 (`2026-05-14_block1-w1d3-deadlift.yaml`) for full cues.
+
+exercises:
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5."
+    sets:
+      - { duration_seconds: 300, type: warmup }
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5."
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 3/5."
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: "WARMUP 4/5."
+    sets:
+      - { reps: 5, type: warmup }
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
+    rest_seconds: 30
+    notes: "WARMUP 5/5."
+    sets:
+      - { reps: 8, type: warmup }
+
+  - exercise: "Deadlift (Barbell)"
+    rest_seconds: 240
+    notes: "ANCHOR. Top triple 245 @ RPE 8. Reset every rep on the heavy sets."
+    sets:
+      - { reps: 5, weight_lb: 135, type: warmup }
+      - { reps: 5, weight_lb: 185, type: warmup }
+      - { reps: 5, weight_lb: 205, rpe: 7 }
+      - { reps: 5, weight_lb: 215, rpe: 7 }
+      - { reps: 5, weight_lb: 225, rpe: 7.5 }
+      - { reps: 3, weight_lb: 235, rpe: 7.5 }
+      - { reps: 3, weight_lb: 245, rpe: 8 }
+      - { reps: 3, weight_lb: 255, rpe: 8 }
+
+  - exercise: "8c2bbcb2-cf0f-4029-aa77-c294f6e7a693"  # Hollow Body Hold
+    rest_seconds: 60
+    notes: "4×45 sec. Or 4×60 if W2 was easy."
+    sets:
+      - { count: 4, duration_seconds: 60 }
+
+  - superset: A
+    exercise: "Bulgarian Split Squat"
+    rest_seconds: 75
+    notes: "Rear foot elevated. 3×6 each. +5 lb."
+    sets:
+      - { count: 3, reps: 6, weight_lb: 35 }
+  - superset: A
+    exercise: "Romanian Deadlift (Dumbbell)"
+    rest_seconds: 75
+    notes: "Toe elevated. 3×6. +5 lb."
+    sets:
+      - { count: 3, reps: 6, weight_lb: 55 }
+
+  - exercise: "Push Press"
+    rest_seconds: 90
+    notes: "Single DB push press. 5 each arm. +5 lb."
+    sets:
+      - { count: 3, reps: 5, weight_lb: 45 }
+
+  - exercise: "Farmers Walk"
+    rest_seconds: 120
+    notes: "Trap bar ~100 ft. +10 lb."
+    sets:
+      - { count: 3, distance_meters: 30, weight_lb: 185 }
+
+  - exercise: "Ball Slams"
+    rest_seconds: 60
+    notes: "4×5 explosive."
+    sets:
+      - { count: 4, reps: 5 }
+
+  - superset: B
+    exercise: "fafd204e-ed13-4ec5-a764-43e8743d3935"  # Single Leg Banded Hamstring Curl
+    rest_seconds: 45
+    notes: "2×20 each leg."
+    sets:
+      - { count: 2, reps: 20 }
+  - superset: B
+    exercise: "Leg Extension (Machine)"
+    rest_seconds: 45
+    notes: "2×20, last set to failure. +10 lb."
+    sets:
+      - { reps: 20, weight_lb: 90 }
+      - { reps: 20, weight_lb: 90, type: failure }

@@ -1,0 +1,68 @@
+title: "Block 1 W4D2 — Press Deload"
+folder: "Block 1 — Restart"
+notes: |
+  BLOCK 1 / WEEK 4 / DAY 2 — DELOAD.
+
+  Press deload. RPE 6 across. ~60% of W1 volume. Cues unchanged.
+
+exercises:
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5."
+    sets:
+      - { duration_seconds: 240, type: warmup }
+  - exercise: "Single Leg Romanian Deadlift (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5."
+    sets:
+      - { count: 2, reps: 10, weight_lb: 15, type: warmup }
+  - exercise: "Face Pull"
+    rest_seconds: 30
+    notes: "WARMUP 3/5."
+    sets:
+      - { count: 2, reps: 12, weight_lb: 30, type: warmup }
+  - exercise: "Side Plank"
+    rest_seconds: 30
+    notes: "WARMUP 4/5."
+    sets:
+      - { count: 2, duration_seconds: 30, type: warmup }
+  - exercise: "Split Squat (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 5/5."
+    sets:
+      - { count: 2, reps: 10, weight_lb: 15, type: warmup }
+
+  - exercise: "Overhead Press (Barbell)"
+    rest_seconds: 150
+    notes: "DELOAD. 3×5 @ RPE 6. Bar speed CRISP."
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 3, weight_lb: 55, type: warmup }
+      - { reps: 5, weight_lb: 55, rpe: 6 }
+      - { reps: 5, weight_lb: 60, rpe: 6 }
+      - { reps: 5, weight_lb: 60, rpe: 6 }
+
+  - exercise: "Pull Up"
+    rest_seconds: 120
+    notes: "DELOAD. 3×3-4 strict. Don't grind."
+    sets:
+      - { count: 3, reps: 4 }
+
+  - superset: A
+    exercise: "Shoulder Press (Dumbbell)"
+    rest_seconds: 60
+    notes: "DELOAD. 2×8 light."
+    sets:
+      - { count: 2, reps: 8, weight_lb: 30 }
+  - superset: A
+    exercise: "Seated Cable Row - V Grip (Cable)"
+    rest_seconds: 60
+    notes: "DELOAD. 2×10 light."
+    sets:
+      - { count: 2, reps: 10, weight_lb: 100 }
+
+  - exercise: "Chest Supported Reverse Fly (Dumbbell)"
+    rest_seconds: 45
+    notes: "DELOAD. 2×12 light."
+    sets:
+      - { count: 2, reps: 12, weight_lb: 12 }

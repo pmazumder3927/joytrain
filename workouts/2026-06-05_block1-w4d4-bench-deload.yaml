@@ -1,0 +1,71 @@
+title: "Block 1 W4D4 — Bench Deload"
+folder: "Block 1 — Restart"
+notes: |
+  BLOCK 1 / WEEK 4 / DAY 4 — DELOAD + BLOCK CLOSE.
+
+  Last session of Block 1. Bench deload + a couple of accessories.
+  After this, message me with: top sets actually hit each lift, any
+  cranky joints, and how you felt at the end of W3 — that's the
+  feedback that calibrates Block 2 base strength.
+
+exercises:
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5."
+    sets:
+      - { duration_seconds: 300, type: warmup }
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5."
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 3/5."
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: "WARMUP 4/5."
+    sets:
+      - { reps: 5, type: warmup }
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
+    rest_seconds: 30
+    notes: "WARMUP 5/5."
+    sets:
+      - { reps: 8, type: warmup }
+
+  - exercise: "Bench Press (Barbell)"
+    rest_seconds: 150
+    notes: "DELOAD. 3×5 @ RPE 6-6.5. Bar speed CRISP."
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 3, weight_lb: 95, type: warmup }
+      - { reps: 5, weight_lb: 105, rpe: 6 }
+      - { reps: 5, weight_lb: 115, rpe: 6 }
+      - { reps: 5, weight_lb: 115, rpe: 6 }
+
+  - exercise: "32d79e65-eb2a-4ae9-8561-f81a3c71bbad"  # Chest Supported External Rotation
+    rest_seconds: 45
+    notes: "Keep this — prehab doesn't deload. 3×10 light."
+    sets:
+      - { count: 3, reps: 10, weight_lb: 8 }
+
+  - exercise: "Bench Press (Dumbbell)"
+    rest_seconds: 75
+    notes: "DELOAD. 2×8 each arm, light."
+    sets:
+      - { count: 2, reps: 16, weight_lb: 30 }
+
+  - superset: A
+    exercise: "Bicep Curl (Barbell)"
+    rest_seconds: 45
+    notes: "DELOAD. 2×8 light."
+    sets:
+      - { count: 2, reps: 8, weight_lb: 55 }
+  - superset: A
+    exercise: "Skullcrusher (Barbell)"
+    rest_seconds: 45
+    notes: "DELOAD. 2×8 light."
+    sets:
+      - { count: 2, reps: 8, weight_lb: 45 }

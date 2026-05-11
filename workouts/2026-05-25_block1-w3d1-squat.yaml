@@ -1,0 +1,102 @@
+title: "Block 1 W3D1 — Pause Squat + Lower"
+folder: "Block 1 — Restart"
+notes: |
+  BLOCK 1 / WEEK 3 / DAY 1.
+
+  W3 progression: heaviest week. Pause Squat moves from 3×8 to 4×6 to
+  accommodate the load increase. Target RPE 8 (2 RIR) on top sets.
+  See W1D1 (`2026-05-11_block1-w1d1-squat.yaml`) for full cues.
+
+  THIS IS THE PUSH WEEK. Next week is deload. Don't grind — RPE 8
+  means 2 left in the tank, not failure.
+
+exercises:
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5."
+    sets:
+      - { duration_seconds: 300, type: warmup }
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5 — goblet."
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 3/5."
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: "WARMUP 4/5."
+    sets:
+      - { reps: 5, type: warmup }
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
+    rest_seconds: 30
+    notes: "WARMUP 5/5."
+    sets:
+      - { reps: 8, type: warmup }
+
+  - exercise: "Pause Squat (Barbell)"
+    rest_seconds: 210
+    notes: "ANCHOR. Move to 4×6 for the heavier week. Top set 165 @ RPE 8."
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 5, weight_lb: 95, type: warmup }
+      - { reps: 3, weight_lb: 125, type: warmup }
+      - { reps: 3, weight_lb: 145, type: warmup }
+      - { reps: 6, weight_lb: 155, rpe: 7.5 }
+      - { reps: 6, weight_lb: 160, rpe: 8 }
+      - { reps: 6, weight_lb: 165, rpe: 8 }
+      - { reps: 6, weight_lb: 165, rpe: 8 }
+
+  - exercise: "Hip Thrust (Barbell)"
+    rest_seconds: 120
+    notes: "3×10 (drop from 12 reps as load goes up). +10 lb over W2."
+    sets:
+      - { count: 3, reps: 10, weight_lb: 155, rpe: 7.5 }
+
+  - exercise: "Walking Lunge (Dumbbell)"
+    rest_seconds: 90
+    notes: "Front-rack. 3×10 (down from 12). +5 lb."
+    sets:
+      - { count: 3, reps: 10, weight_lb: 35 }
+
+  - superset: A
+    exercise: "Single Leg Romanian Deadlift (Dumbbell)"
+    rest_seconds: 60
+    notes: "5,5,5,5,10. +5 lb."
+    sets:
+      - { count: 4, reps: 5, weight_lb: 40 }
+      - { reps: 10, weight_lb: 30 }
+  - superset: A
+    exercise: "Lateral Lunge"
+    rest_seconds: 60
+    notes: "4×5 each side, goblet."
+    sets:
+      - { count: 4, reps: 5, weight_lb: 30 }
+
+  - exercise: "Plank"
+    rest_seconds: 60
+    notes: "3×1:30 (up from 1:20). Weight on set 3 if easy."
+    sets:
+      - { count: 3, duration_seconds: 90 }
+
+  - superset: B
+    exercise: "Sit Up (Weighted)"
+    rest_seconds: 45
+    notes: "Core 1/3."
+    sets:
+      - { count: 3, reps: 20, weight_lb: 30 }
+  - superset: B
+    exercise: "Hanging Knee Raise"
+    rest_seconds: 45
+    notes: "Core 2/3. +2 reps."
+    sets:
+      - { count: 3, reps: 12 }
+  - superset: B
+    exercise: "Russian Twist (Weighted)"
+    rest_seconds: 45
+    notes: "Core 3/3."
+    sets:
+      - { count: 3, reps: 20, weight_lb: 30 }

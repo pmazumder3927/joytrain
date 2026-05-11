@@ -1,0 +1,76 @@
+title: "Block 1 W4D1 — Squat Deload"
+folder: "Block 1 — Restart"
+notes: |
+  BLOCK 1 / WEEK 4 / DAY 1 — DELOAD.
+
+  Purpose: recover from W3 heaviest exposure, maintain movement
+  patterns, prime for Block 2 base strength. RPE 6-6.5 across.
+  Volume cut to ~60% of W1.
+
+  THIS IS NOT A TEST WEEK. Don't chase loads. If you feel fresh after
+  D1, you can convert the rest of W4 into a 3RM test on D1 or D3 —
+  but make that call AFTER today, not before.
+
+  Cues unchanged. See W1D1.
+
+exercises:
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: "WARMUP 1/5 — keep this full. Mobility doesn't deload."
+    sets:
+      - { duration_seconds: 300, type: warmup }
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 2/5."
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: "WARMUP 3/5."
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: "WARMUP 4/5."
+    sets:
+      - { reps: 5, type: warmup }
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
+    rest_seconds: 30
+    notes: "WARMUP 5/5."
+    sets:
+      - { reps: 8, type: warmup }
+
+  - exercise: "Pause Squat (Barbell)"
+    rest_seconds: 150
+    notes: "DELOAD. 3×5 @ RPE 6-6.5. Bar speed CRISP, no grinding."
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 5, weight_lb: 85, type: warmup }
+      - { reps: 5, weight_lb: 105, rpe: 6 }
+      - { reps: 5, weight_lb: 115, rpe: 6 }
+      - { reps: 5, weight_lb: 115, rpe: 6 }
+
+  - exercise: "Hip Thrust (Barbell)"
+    rest_seconds: 90
+    notes: "DELOAD. 2×10 light."
+    sets:
+      - { count: 2, reps: 10, weight_lb: 115, rpe: 6 }
+
+  - superset: A
+    exercise: "Single Leg Romanian Deadlift (Dumbbell)"
+    rest_seconds: 45
+    notes: "DELOAD. 2×8 each leg, light."
+    sets:
+      - { count: 2, reps: 8, weight_lb: 25 }
+  - superset: A
+    exercise: "Lateral Lunge"
+    rest_seconds: 45
+    notes: "DELOAD. 2×5 each, bodyweight."
+    sets:
+      - { count: 2, reps: 5 }
+
+  - exercise: "Plank"
+    rest_seconds: 45
+    notes: "2×60s — half W3 volume."
+    sets:
+      - { count: 2, duration_seconds: 60 }
