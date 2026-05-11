@@ -1,17 +1,13 @@
 title: "Block 1 W1D3 — Deadlift + Posterior + Power"
 folder: "Block 1 — Restart"
 notes: |
-  MACROCYCLE 1 / BLOCK 1 / WEEK 1 / DAY 3.
+  Week 1 — Day 3, deadlift + posterior chain + full-body power.
 
-  Source: Block 9 W1D5 (training-history.md "Week 1 Day 5 —
-  deadlift/full-body power"). D3 anchor = Deadlift with the explicit
-  ramping pattern 5,5,5,3,3,3 @ 65/68/70/72/75/78%. We mirror the
-  6-working-set ascending structure but use absolute loads since no
-  current 1RM. Assume conservative ~315 lb 1RM seed → top single 245 lb.
+  Anchor = Deadlift ramping 5,5,5,3,3,3. Top single 235 lb @ RPE 7.5
+  (conservative seed assuming ~315 lb 1RM — recalibrate after today).
 
   THEMES: hinge volume, single-leg posterior chain, athletic power
-  (slams), loaded carries. Block 9 was very clear about this day being
-  "full-body power" — keep the slam/carry primal feel.
+  (slams), loaded carries. Keep the slam/carry primal feel.
 
   CUES:
     - Deadlift: brace BEFORE pulling slack. Wedge into the bar. Hips
@@ -30,7 +26,7 @@ notes: |
       to catch the bounce, repeat. 5 reps explosive.
 
 exercises:
-  # ----- WARMUP (deadlift day from Block 1) -----
+  # ----- WARMUP -----
 
   - exercise: "Stretching"
     rest_seconds: 0
@@ -43,8 +39,7 @@ exercises:
   - exercise: "Reverse Lunge (Dumbbell)"
     rest_seconds: 30
     notes: |
-      WARMUP 2/5 — goblet style, 10 each leg. Block 1 deadlift-day
-      warmup. Light DB (20-25 lb).
+      WARMUP 2/5 — goblet style, 10 each leg. Light DB (20-25 lb).
     sets:
       - { reps: 20, weight_lb: 25, type: warmup }
 
@@ -76,7 +71,7 @@ exercises:
   - exercise: "Deadlift (Barbell)"
     rest_seconds: 240
     notes: |
-      ANCHOR LIFT. Block 9 W1D5 spec: 5,5,5,3,3,3 @ 65/68/70/72/75/78%.
+      ANCHOR LIFT. 5,5,5,3,3,3 @ 65/68/70/72/75/78%.
       6 working sets ascending. Top set 225 lb @ RPE 7 (conservative
       seed assuming ~315 lb 1RM — recalibrate after today).
       Reset between every rep on the heavier triples.
@@ -93,7 +88,7 @@ exercises:
   - exercise: "8c2bbcb2-cf0f-4029-aa77-c294f6e7a693"  # Hollow Body Hold
     rest_seconds: 60
     notes: |
-      Block 9 W1D5 spec: 4×45 sec. Anti-extension core. Low back glued
+      4×45 sec. Anti-extension core. Low back glued
       to floor — if it lifts, bend knees to shorten lever.
       Demo: https://www.youtube.com/watch?v=JnuYfsJ3CKg
     sets:
@@ -103,7 +98,7 @@ exercises:
     exercise: "Bulgarian Split Squat"
     rest_seconds: 75
     notes: |
-      Block 9 W1D5 spec "DB Rear Foot Elevated Split Squat — 3×6".
+      DB Rear Foot Elevated Split Squat — 3×6".
       Hold a DB in each hand (25 lb). 6 EACH leg. Front shin vertical.
     sets:
       - { count: 3, reps: 6, weight_lb: 25 }
@@ -112,7 +107,7 @@ exercises:
     exercise: "Romanian Deadlift (Dumbbell)"
     rest_seconds: 75
     notes: |
-      Block 9 W1D5 spec "Toe Elevated DB RDL — 3×6". Stand with toes on
+      Toe Elevated DB RDL — 3×6". Stand with toes on
       a plate (heels lower). Hinge from hips. Slow eccentric, hamstrings
       should scream.
       Demo: https://www.youtube.com/watch?v=4-l6t_ziW8I
@@ -122,7 +117,7 @@ exercises:
   - exercise: "c78158b0-3082-48b4-99e0-20d24fbe2d9f"  # Single Arm DB Push Press (custom)
     rest_seconds: 90
     notes: |
-      Block 9 W1D5 spec "1 Arm DB Push Press — 3×5". Use ONE dumbbell
+      1 Arm DB Push Press — 3×5". Use ONE dumbbell
       held at the shoulder. Dip-drive-press, alternating arms. 5 reps
       EACH arm. Anti-rotation core demand makes this a different
       stimulus than bilateral barbell push press.
@@ -133,7 +128,7 @@ exercises:
   - exercise: "Farmers Walk"
     rest_seconds: 120
     notes: |
-      Block 9 W1D5 spec "Trap Bar Farmer Carry — 3×100 ft". Use a trap
+      Trap Bar Farmer Carry — 3×100 ft". Use a trap
       bar loaded heavy (~155-185 lb total). If no trap bar, heavy DBs
       in each hand. Logged as distance (~30m = 100 ft).
     sets:
@@ -142,7 +137,7 @@ exercises:
   - exercise: "Ball Slams"
     rest_seconds: 60
     notes: |
-      Block 9 W1D5 spec "Med Ball Slam — 4×5". Explosive. Throw it
+      Med Ball Slam — 4×5". Explosive. Throw it
       DOWN. Catch the bounce, reset, repeat. 4×5.
     sets:
       - { count: 4, reps: 5 }
@@ -151,7 +146,7 @@ exercises:
     exercise: "fafd204e-ed13-4ec5-a764-43e8743d3935"  # Single Leg Banded Hamstring Curl
     rest_seconds: 45
     notes: |
-      Block 9 W1D5 spec "Single Leg Banded Hamstring Curl — 2×20".
+      Single Leg Banded Hamstring Curl — 2×20".
       Anchor a band low (or use rack base). Lie face down, loop around
       one ankle, curl the heel to the glute. 20 reps EACH leg.
       Demo: https://www.youtube.com/watch?v=riYiKc0_0Fs
@@ -162,7 +157,7 @@ exercises:
     exercise: "Leg Extension (Machine)"
     rest_seconds: 45
     notes: |
-      Block 9 W1D5 spec "Kneeling Leg Extension — 2×20". Use the
+      Kneeling Leg Extension — 2×20". Use the
       machine seated — squeeze quads HARD at the top, slow eccentric.
       2×20, moderate weight.
     sets:

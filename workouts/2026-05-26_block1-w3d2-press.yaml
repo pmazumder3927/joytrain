@@ -1,7 +1,7 @@
 title: "Block 1 W3D2 — Strict Press + Upper Pull + Arms"
 folder: "Block 1 — Restart"
 notes: |
-  BLOCK 1 / WEEK 3 / DAY 2.
+  Week 3 — Day 2.
 
   W3 push week — RPE 8 target on press top triple.
   See W1D2 (`2026-05-12_block1-w1d2-press.yaml`) for full cues.
@@ -35,7 +35,7 @@ exercises:
 
   - exercise: "Overhead Press (Barbell)"
     rest_seconds: 210
-    notes: "ANCHOR. 3,3,3,5,5. Top triple 85 @ RPE 8 (heaviest exposure of block)."
+    notes: "ANCHOR. 3,3,3,5,5. Top triple 85 @ RPE 8 (heaviest exposure of block)"
     sets:
       - { reps: 5, weight_lb: 45, type: warmup }
       - { reps: 3, weight_lb: 65, type: warmup }
@@ -47,20 +47,20 @@ exercises:
 
   - exercise: "Pull Up"
     rest_seconds: 150
-    notes: "Push week — 5×7 (or 5×6 + weight if 5×6 strict was easy in W2)."
+    notes: "Push week — 5×7 (or 5×6 + weight if 5×6 strict was easy in W2)"
     sets:
       - { count: 5, reps: 7 }
 
   - superset: A
     exercise: "Shoulder Press (Dumbbell)"
     rest_seconds: 60
-    notes: "Single arm seated. +5 lb. Demo: https://www.youtube.com/watch?v=MZdT1-Bv9Dg"
+    notes: "Single arm seated. +5 lb. Demo: https://www.youtube.com/watch?v=MZdT1-Bv9Dg."
     sets:
       - { count: 3, reps: 6, weight_lb: 45 }
   - superset: A
     exercise: "Lat Pulldown - Close Grip (Cable)"
     rest_seconds: 60
-    notes: "Chin grip. +10 lb. Demo: https://www.youtube.com/watch?v=fLnD4BYg7nU"
+    notes: "Chin grip. +10 lb. Demo: https://www.youtube.com/watch?v=fLnD4BYg7nU."
     sets:
       - { count: 3, reps: 6, weight_lb: 130 }
 
@@ -98,7 +98,7 @@ exercises:
   - superset: C
     exercise: "Triceps Rope Pushdown"
     rest_seconds: 30
-    notes: "FINISHER 2/2 — 4×20, last set to failure (grind reps 20+)."
+    notes: "FINISHER 2/2 — 4×20, last set to failure (grind reps 20+)"
     sets:
       - { count: 3, reps: 20, weight_lb: 60 }
       - { reps: 20, weight_lb: 60, type: failure }

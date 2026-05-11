@@ -1,7 +1,7 @@
 title: "Block 1 W2D2 — Strict Press + Upper Pull + Arms"
 folder: "Block 1 — Restart"
 notes: |
-  BLOCK 1 / WEEK 2 / DAY 2.
+  Week 2 — Day 2.
 
   W2 progression: +5 lb on OHP top triple, RPE 7.5.
   See W1D2 (`2026-05-12_block1-w1d2-press.yaml`) for full cues.
@@ -16,7 +16,7 @@ exercises:
       - { duration_seconds: 240, type: warmup }
   - exercise: "Single Leg Romanian Deadlift (Dumbbell)"
     rest_seconds: 30
-    notes: "WARMUP 2/5 — Block 1 wall-press SLRDL sub. 2×10 each."
+    notes: "WARMUP 2/5 — 2×10 each leg, light DB."
     sets:
       - { count: 2, reps: 10, weight_lb: 15, type: warmup }
   - exercise: "Face Pull"
@@ -56,20 +56,20 @@ exercises:
   - superset: A
     exercise: "Shoulder Press (Dumbbell)"
     rest_seconds: 60
-    notes: "Single-arm seated. 6 each arm. +5 lb over W1. Demo: https://www.youtube.com/watch?v=MZdT1-Bv9Dg"
+    notes: "Single-arm seated. 6 each arm. +5 lb over W1. Demo: https://www.youtube.com/watch?v=MZdT1-Bv9Dg."
     sets:
       - { count: 3, reps: 6, weight_lb: 40 }
   - superset: A
     exercise: "Lat Pulldown - Close Grip (Cable)"
     rest_seconds: 60
-    notes: "Chin grip. +10 lb over W1. Demo: https://www.youtube.com/watch?v=fLnD4BYg7nU"
+    notes: "Chin grip. +10 lb over W1. Demo: https://www.youtube.com/watch?v=fLnD4BYg7nU."
     sets:
       - { count: 3, reps: 6, weight_lb: 120 }
 
   - superset: B
     exercise: "Lateral Raise (Dumbbell)"
     rest_seconds: 60
-    notes: "Direct lat-delt work (replaces W1 goblet squat slot). 3×12, +2-3 lb."
+    notes: "Direct lateral delt work. 3×12, +2-3 lb from W1."
     sets:
       - { count: 3, reps: 12, weight_lb: 17 }
   - superset: B

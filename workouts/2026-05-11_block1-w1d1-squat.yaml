@@ -1,23 +1,14 @@
 title: "Block 1 W1D1 — Pause Squat + Lower (Restart)"
 folder: "Block 1 — Restart"
 notes: |
-  MACROCYCLE 1 / BLOCK 1 / WEEK 1 / DAY 1 — restart kickoff.
+  Week 1 — Day 1. Squat focus.
 
-  Block 1 = 4 weeks, 4 days/week, modeled on Block 9 (Jul 2022 restart)
-  — training-history.md calls Block 9 "the best model for current restart" since
-  it was an explicit Week 1 block that already blended prior themes.
-  D1 anchor is Pause Back Squat, mirroring Block 9 W1D2.
+  CALIBRATION DAY. Loads below are starting estimates — pick whatever
+  weight produces the prescribed RPE, and that load becomes the W1
+  reference for the next 3 weeks.
 
-  TODAY IS CALIBRATION DAY. No current 1RM data — loads below are best
-  guesses (Block 8 W5D2 had pause squat ~176 lb / 80 kg @ 3RPM in 2022;
-  these are discounted). Pick whatever weight produces the prescribed
-  RPE — that load becomes the W1 reference for the next 3 weeks.
-
-  PROGRESSION (Block 1):
-    W1 (today): RPE 7-7.5 across   <-- you are here
-    W2 5/18:    +5%, target RPE 7.5
-    W3 5/25:    +5% again, target RPE 8
-    W4 6/1:     deload OR 3RM test on D1 (decide on 5/31)
+  Progression: W1 (today) RPE 7-7.5 → W2 5/18 +5% RPE 7.5 → W3 5/25 +5%
+  RPE 8 → W4 6/1 deload (or 3RM test on D1 — decide on 5/31).
 
   CUES:
     - Pause Squat: 1s pause at bottom EVERY rep. Brace before unrack.
@@ -37,7 +28,7 @@ notes: |
   that's the feedback loop for the next session.
 
 exercises:
-  # ----- WARMUP (Block 9 W1D2 template, adapted) -----
+  # ----- WARMUP -----
 
   - exercise: "Stretching"
     rest_seconds: 0
@@ -77,8 +68,7 @@ exercises:
     notes: |
       WARMUP 5/5 — bracing primer. Loop a light band around the wrists
       (anti-shoulder-adduction tension), walk out from a standing-pike
-      forward fold into a plank, walk back. 8 walkouts. Direct Block 9
-      W1D2 warmup spec.
+      forward fold into a plank, walk back. 8 walkouts.
       Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8
     sets:
       - { reps: 8, type: warmup }
@@ -89,8 +79,7 @@ exercises:
     rest_seconds: 180
     notes: |
       ANCHOR LIFT. 1s pause at the BOTTOM on every rep — count it.
-      Block 9 W1D2 spec was 3×8 @ 60/63/65% — we mirror that pattern
-      but use absolute weights since no current 1RM exists.
+      3×8 working sets, absolute weights since no current 1RM exists.
       Ramping warmup, then 3 working sets at RPE 7 → 7.5.
       If top set @ 145 feels lighter than RPE 7, bump to 155 and log it.
     sets:
@@ -104,10 +93,8 @@ exercises:
   - exercise: "Hip Thrust (Barbell)"
     rest_seconds: 120
     notes: |
-      SECOND COMPOUND. Direct copy of Block 9 W1D2 slot — 3×12.
-      Pause 1s at full extension every rep. Use a pad. RPE 7.
-      Starting load bumped post-audit (was 135 — too light for an
-      11-yr-history lifter). If 155 grinds, scale down.
+      SECOND COMPOUND. 3×12. Pause 1s at full extension every rep.
+      Use a pad. RPE 7. If 155 grinds, scale down.
     sets:
       - { count: 3, reps: 12, weight_lb: 155, rpe: 7 }
 
@@ -115,9 +102,8 @@ exercises:
     rest_seconds: 90
     notes: |
       DBs held at the shoulders, elbows up (front rack). 12 total reps
-      per set (6 each leg, alternating). Block 9 W1D2 spec named this
-      movement specifically — front rack matters because it hits core +
-      upper back, not just legs.
+      per set (6 each leg, alternating). Front rack matters because it
+      hits core + upper back, not just legs.
       Demo: https://www.youtube.com/watch?v=wpYr3tVus3Q
     sets:
       - { count: 3, reps: 12, weight_lb: 25 }
@@ -128,10 +114,9 @@ exercises:
     exercise: "Single Leg Romanian Deadlift (Dumbbell)"
     rest_seconds: 60
     notes: |
-      Block 9 W1D2 spec: 5,5,5,5,10 (last set is the burnout — drop
-      weight, hit 10/leg). DB in the OPPOSITE hand from the working
-      leg (contralateral). Slow eccentric, hinge from the hip.
-      Reps below are per-leg.
+      5,5,5,5,10 (last set is the burnout — drop weight, hit 10/leg).
+      DB in the OPPOSITE hand from the working leg (contralateral).
+      Slow eccentric, hinge from the hip. Reps below are per-leg.
     sets:
       - { count: 4, reps: 5, weight_lb: 30 }
       - { reps: 10, weight_lb: 20 }
@@ -140,18 +125,17 @@ exercises:
     exercise: "Lateral Lunge"
     rest_seconds: 60
     notes: |
-      Bodyweight today (add a goblet DB if RPE < 6). Block 9 W1D2 spec:
-      4×5. 5 each side per set. Hip/adductor mobility focus.
+      Bodyweight today (add a goblet DB if RPE < 6). 4×5. 5 each side per set. Hip/adductor mobility focus.
     sets:
       - { count: 4, reps: 5 }
 
-  # ----- CORE FINISHER (Block 9 W1D2 finisher, run as circuit B) -----
+  # ----- CORE FINISHER (run as circuit B) -----
 
   - exercise: "Plank"
     rest_seconds: 60
     notes: |
-      Block 9 spec: 3×1:20. If 80s feels easy by set 2, put a plate on
-      your back for set 3.
+      3×1:20. If 80s feels easy by set 2, put a plate on your back for
+      set 3.
     sets:
       - { count: 3, duration_seconds: 80 }
 
@@ -159,11 +143,10 @@ exercises:
     exercise: "397dd589-27a2-47d1-a864-f6a9a98f0b0c"  # Copenhagen Plank
     rest_seconds: 45
     notes: |
-      Adductor + anti-rotation hold. Block 7 W1D2 and Block 8 W5D1 both
-      featured this. Side plank with the top foot resting on a bench;
-      bottom leg HOVERS, adductor of top leg presses into the bench.
-      20s each side per set. Start short; scale duration if you
-      can't hold form.
+      Adductor + anti-rotation hold. Side plank with the top foot
+      resting on a bench; bottom leg HOVERS, adductor of top leg
+      presses into the bench. 20s each side per set. Start short;
+      scale duration if you can't hold form.
       Demo: https://www.youtube.com/watch?v=tj8trAmxLe0
     sets:
       - { count: 3, duration_seconds: 20 }
@@ -172,8 +155,7 @@ exercises:
     exercise: "Sit Up (Weighted)"
     rest_seconds: 45
     notes: |
-      CORE CIRCUIT 1/3 — Block 9 W1D2 finisher. Hold a plate to the
-      chest. 3×20.
+      CORE CIRCUIT 1/3 — finisher. Hold a plate to the chest. 3×20.
     sets:
       - { count: 3, reps: 20, weight_lb: 25 }
 
@@ -181,8 +163,7 @@ exercises:
     exercise: "Hanging Knee Raise"
     rest_seconds: 45
     notes: |
-      CORE CIRCUIT 2/3 — substitute for "hanging knee tucks". Knees to
-      chest, slow, no swing. 3×10.
+      CORE CIRCUIT 2/3 — knees to chest, slow, no swing. 3×10.
     sets:
       - { count: 3, reps: 10 }
 

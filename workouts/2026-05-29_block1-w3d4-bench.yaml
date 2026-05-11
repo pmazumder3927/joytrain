@@ -1,10 +1,10 @@
 title: "Block 1 W3D4 — Bench + Upper Accessories + Arms"
 folder: "Block 1 — Restart"
 notes: |
-  BLOCK 1 / WEEK 3 / DAY 4.
+  Week 3 — Day 4. Bench focus.
 
   W3 push week — bench top set 145 @ RPE 8.
-  See W1D4 (`2026-05-15_block1-w1d4-bench.yaml`) for full cues.
+  See W1D4 for full cues.
 
 exercises:
   - exercise: "Stretching"
@@ -29,7 +29,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
+    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8."
     sets:
       - { reps: 8, type: warmup }
 
@@ -47,7 +47,7 @@ exercises:
 
   - exercise: "32d79e65-eb2a-4ae9-8561-f81a3c71bbad"  # Chest Supported External Rotation
     rest_seconds: 60
-    notes: "Prehab. 4×10, light. Don't push load — quality over weight. Demo: https://www.youtube.com/watch?v=2Ryroega_wk"
+    notes: "Prehab. 4×10, light. Don't push load — quality over weight. Demo: https://www.youtube.com/watch?v=2Ryroega_wk."
     sets:
       - { count: 4, reps: 10, weight_lb: 10 }
 
@@ -59,7 +59,7 @@ exercises:
 
   - exercise: "Bench Press (Dumbbell)"
     rest_seconds: 90
-    notes: "Alternating. 8 each arm, last set MAX. +5 lb. Demo: https://www.youtube.com/watch?v=xPR-LN2ppx0"
+    notes: "Alternating. 8 each arm, last set MAX. +5 lb. Demo: https://www.youtube.com/watch?v=xPR-LN2ppx0."
     sets:
       - { reps: 16, weight_lb: 45 }
       - { reps: 16, weight_lb: 45 }
@@ -68,7 +68,7 @@ exercises:
 
   - exercise: "45e60221-6618-4055-9f14-9611e353df79"  # Suitcase Deadlift
     rest_seconds: 75
-    notes: "3×12 each side. +9 lb (next KB up, 40kg). Demo: https://www.youtube.com/watch?v=dj3lWcYMZQg"
+    notes: "3×12 each side. +9 lb (next KB up, 40kg). Demo: https://www.youtube.com/watch?v=dj3lWcYMZQg."
     sets:
       - { count: 3, reps: 24, weight_lb: 88 }
 
@@ -87,7 +87,7 @@ exercises:
   - superset: A
     exercise: "Chest Fly (Dumbbell)"
     rest_seconds: 60
-    notes: "3×8, last set to failure (drop weight 10 lb mid-set if you stall — true dropset)."
+    notes: "3×8, last set to failure (drop weight 10 lb mid-set if you stall — true dropset)"
     sets:
       - { count: 2, reps: 8, weight_lb: 35 }
       - { reps: 8, weight_lb: 35, type: dropset }

@@ -1,11 +1,10 @@
 title: "Block 1 W3D1 — Pause Squat + Lower"
 folder: "Block 1 — Restart"
 notes: |
-  BLOCK 1 / WEEK 3 / DAY 1.
+  Week 3 — Day 1. Squat focus.
 
   W3 progression: heaviest week. Pause Squat moves from 3×8 to 4×6 to
   accommodate the load increase. Target RPE 8 (2 RIR) on top sets.
-  See W1D1 (`2026-05-11_block1-w1d1-squat.yaml`) for full cues.
 
   THIS IS THE PUSH WEEK. Next week is deload. Don't grind — RPE 8
   means 2 left in the tank, not failure.
@@ -33,7 +32,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
+    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8."
     sets:
       - { reps: 8, type: warmup }
 
@@ -58,7 +57,7 @@ exercises:
 
   - exercise: "17c4f4ad-c0ae-4729-a34b-d450380ad250"  # Front Rack Walking Lunge
     rest_seconds: 90
-    notes: "Front rack DBs at shoulders. 3×10 (down from 12). +5 lb. Demo: https://www.youtube.com/watch?v=wpYr3tVus3Q"
+    notes: "Front rack DBs at shoulders. 3×10 (down from 12). +5 lb. Demo: https://www.youtube.com/watch?v=wpYr3tVus3Q."
     sets:
       - { count: 3, reps: 10, weight_lb: 35 }
 
@@ -85,7 +84,7 @@ exercises:
   - superset: B
     exercise: "397dd589-27a2-47d1-a864-f6a9a98f0b0c"  # Copenhagen Plank
     rest_seconds: 45
-    notes: "Push-week 30s each side. Demo: https://www.youtube.com/watch?v=tj8trAmxLe0"
+    notes: "Push-week 30s each side. Demo: https://www.youtube.com/watch?v=tj8trAmxLe0."
     sets:
       - { count: 3, duration_seconds: 30 }
 

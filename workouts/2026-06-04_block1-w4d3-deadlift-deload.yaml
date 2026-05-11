@@ -1,9 +1,10 @@
 title: "Block 1 W4D3 — Deadlift Deload"
 folder: "Block 1 — Restart"
 notes: |
-  BLOCK 1 / WEEK 4 / DAY 3 — DELOAD.
+  Week 4 — Day 3, deadlift deload.
 
-  Deadlift deload. ~70% of W1 top. RPE 6.5. Skip slams + carries.
+  ~70% of W1 top. RPE 6.5. Skip slams + carries. Bar speed crisp,
+  full reset every rep.
 
 exercises:
   - exercise: "Stretching"
@@ -28,7 +29,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
+    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8."
     sets:
       - { reps: 8, type: warmup }
 
@@ -43,7 +44,7 @@ exercises:
 
   - exercise: "8c2bbcb2-cf0f-4029-aa77-c294f6e7a693"  # Hollow Body Hold
     rest_seconds: 45
-    notes: "DELOAD. 2×30 sec. Demo: https://www.youtube.com/watch?v=JnuYfsJ3CKg"
+    notes: "DELOAD. 2×30 sec. Demo: https://www.youtube.com/watch?v=JnuYfsJ3CKg."
     sets:
       - { count: 2, duration_seconds: 30 }
 

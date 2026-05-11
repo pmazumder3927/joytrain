@@ -1,10 +1,9 @@
 title: "Block 1 W2D1 — Pause Squat + Lower"
 folder: "Block 1 — Restart"
 notes: |
-  BLOCK 1 / WEEK 2 / DAY 1.
+  Week 2 — Day 1. Squat focus.
 
   W2 progression: +5% on the main lift top set vs W1, RPE 7.5.
-  See `2026-05-11_block1-w1d1-squat.yaml` (W1D1) for full cues.
 
   Adjust loads up if W1 actuals were lighter than RPE 7.5 — these
   prescriptions assume W1 top set @ 145 lb hit RPE 7.5 cleanly.
@@ -38,7 +37,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5 — 8 walkouts. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
+    notes: "WARMUP 5/5 — 8 walkouts. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8."
     sets:
       - { reps: 8, type: warmup }
 
@@ -55,20 +54,20 @@ exercises:
 
   - exercise: "Hip Thrust (Barbell)"
     rest_seconds: 120
-    notes: "Block 9 W1D2 slot. 3×12, RPE 7. +10 lb over W1."
+    notes: "3×12, RPE 7. +10 lb over W1."
     sets:
       - { count: 3, reps: 12, weight_lb: 165, rpe: 7 }
 
   - exercise: "17c4f4ad-c0ae-4729-a34b-d450380ad250"  # Front Rack Walking Lunge
     rest_seconds: 90
-    notes: "Front rack DBs at shoulders. 12 reps/set (6 each leg). Demo: https://www.youtube.com/watch?v=wpYr3tVus3Q"
+    notes: "Front rack DBs at shoulders. 12 reps/set (6 each leg). Demo: https://www.youtube.com/watch?v=wpYr3tVus3Q."
     sets:
       - { count: 3, reps: 12, weight_lb: 30 }
 
   - superset: A
     exercise: "Single Leg Romanian Deadlift (Dumbbell)"
     rest_seconds: 60
-    notes: "Block 9 spec 5,5,5,5,10 per leg. Last set burnout."
+    notes: "5,5,5,5,10 per leg. Last set burnout."
     sets:
       - { count: 4, reps: 5, weight_lb: 35 }
       - { reps: 10, weight_lb: 25 }
@@ -88,7 +87,7 @@ exercises:
   - superset: B
     exercise: "397dd589-27a2-47d1-a864-f6a9a98f0b0c"  # Copenhagen Plank
     rest_seconds: 45
-    notes: "Adductor + anti-rotation hold. 25s each side. Demo: https://www.youtube.com/watch?v=tj8trAmxLe0"
+    notes: "Adductor + anti-rotation hold. 25s each side. Demo: https://www.youtube.com/watch?v=tj8trAmxLe0."
     sets:
       - { count: 3, duration_seconds: 25 }
 

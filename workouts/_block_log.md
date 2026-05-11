@@ -178,6 +178,21 @@ duplicate has been fixed in `hevy.py`.
   instead, since hamstring stimulus is the same).
 - **Custom-exercise quota**: hit a 403 if exceeded. Block 1 added 8
   custom templates — monitor before bulk-creating in future blocks.
+- **Hevy notes must be self-contained at workout time.** No "Block 9 W1D2
+  spec", "training-history.md", "MACROCYCLE / BLOCK / WEEK / DAY"
+  headers, "Direct copy of...", "Source: Block N...", "modeled on
+  Block N", "post-audit", or any other planning-time reference belongs
+  in routine or exercise notes. The user won't remember what Block 9
+  is at the rack. Cues / targets / physiology framing / safety / demo
+  links are what survives. Planning context goes here in `_block_log.md`
+  instead. Block 1 had this scrubbed late — Block 2 onward, write clean
+  from the start.
+- **Don't try to scrub these references with a regex script.** Notes
+  prose is too varied — patterns leave awkward fragments and break
+  headings. If a cleanup is needed mid-block, dispatch parallel
+  general-purpose agents (one per day-type / file group) and let them
+  rewrite with judgment. The 2026-05-11 Block-1 cleanup used 4 agents
+  on 4 files each; works well.
 - **Demo links for non-built-in exercises.** Every custom exercise and
   every variation that Hevy's template doesn't capture must include a
   `Demo: <youtube-url>` line in its notes. Skip when Hevy's built-in

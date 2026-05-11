@@ -1,12 +1,12 @@
 title: "Block 1 W4D4 — Bench Deload"
 folder: "Block 1 — Restart"
 notes: |
-  BLOCK 1 / WEEK 4 / DAY 4 — DELOAD + BLOCK CLOSE.
+  Week 4 — Day 4. Deload + block close.
 
-  Last session of Block 1. Bench deload + a couple of accessories.
+  Last session of the block. Bench deload + a couple of accessories.
   After this, message me with: top sets actually hit each lift, any
   cranky joints, and how you felt at the end of W3 — that's the
-  feedback that calibrates Block 2 base strength.
+  feedback that calibrates the next block.
 
 exercises:
   - exercise: "Stretching"
@@ -31,7 +31,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
+    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8."
     sets:
       - { reps: 8, type: warmup }
 
@@ -47,7 +47,7 @@ exercises:
 
   - exercise: "32d79e65-eb2a-4ae9-8561-f81a3c71bbad"  # Chest Supported External Rotation
     rest_seconds: 45
-    notes: "Keep this — prehab doesn't deload. 3×10 light. Demo: https://www.youtube.com/watch?v=2Ryroega_wk"
+    notes: "Keep this — prehab doesn't deload. 3×10 light. Demo: https://www.youtube.com/watch?v=2Ryroega_wk."
     sets:
       - { count: 3, reps: 10, weight_lb: 8 }
 

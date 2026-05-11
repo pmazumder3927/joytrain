@@ -160,6 +160,17 @@ joytrain/
 
 ## Style notes when programming
 
+- **Hevy notes must be self-contained.** Anything that appears in `notes:`
+  fields (routine-level or per-exercise) gets pushed to Hevy and is what
+  the user reads at the rack. **Never** write internal programming
+  references in there — no "Block 9 W1D2 spec", "training-history.md",
+  "MACROCYCLE / BLOCK / WEEK / DAY" headers, "Direct copy of...", "from
+  Block X (year) source", or "audit pass" commentary. The user won't
+  remember what Block 9 is, and nobody else looking at the routine
+  would either. Keep notes to: cue (what to do), target (load / reps /
+  RPE / tempo), why-this-exercise framed in physiology not history,
+  safety, demo link. Planning-context belongs in `workouts/_block_log.md`,
+  not in pushed routines.
 - Per-set RPE targets are valuable — write them. They land in the exercise
   notes automatically.
 - The user has 11+ years of strength history (see `context/training-history.md`). Use real loads
