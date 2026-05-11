@@ -137,18 +137,27 @@ When `context/training-history.md` names a movement that doesn't exist in Hevy's
 add it via `hevy.py create-exercise` and reference it here. Use the ID
 in YAML to avoid `ambiguous exact match` if duplicates exist.
 
-| Title                            | ID                                     | Type        | Equipment       | Muscle     | Demo URL          | Notes                                          |
-| -------------------------------- | -------------------------------------- | ----------- | --------------- | ---------- | ----------------- | ---------------------------------------------- |
-| Banded Plank Walkout             | `ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66` | reps_only   | resistance_band | abdominals | _pending_         | Block 9 W1D2 warmup primitive                  |
-| Hollow Body Hold                 | `8c2bbcb2-cf0f-4029-aa77-c294f6e7a693` | duration    | none            | abdominals | _pending_         | Block 9 W1D5 core anchor (isometric, ≠ rock)   |
-| Suitcase Deadlift                | `45e60221-6618-4055-9f14-9611e353df79` | weight_reps | kettlebell      | glutes     | _pending_         | Block 8 W5D2 anti-lateral-flexion              |
-| Z Press                          | `884efe63-16d9-4f83-b1ab-3b334715b308` | weight_reps | barbell         | shoulders  | _pending_         | Block 7/8 seated OHP, no leg drive             |
-| Copenhagen Plank                 | `397dd589-27a2-47d1-a864-f6a9a98f0b0c` | duration    | none            | adductors  | _pending_         | Block 7/8 adductor / anti-rotation             |
-| Rope Slams                       | `8001b2fd-6984-4e6a-aa61-dcd437a5b53e` | reps_only   | other           | full_body  | _pending_         | Block 3 conditioning finisher                  |
-| Chest Supported External Rotation| `32d79e65-eb2a-4ae9-8561-f81a3c71bbad` | weight_reps | dumbbell        | shoulders  | _pending_         | Block 8 W5D2 rotator-cuff prehab               |
-| Single Leg Banded Hamstring Curl | `fafd204e-ed13-4ec5-a764-43e8743d3935` | reps_only   | resistance_band | hamstrings | _pending_         | Block 9 W1D5 posterior-chain accessory         |
-| Front Rack Walking Lunge         | `17c4f4ad-c0ae-4729-a34b-d450380ad250` | weight_reps | dumbbell        | quadriceps | _pending_         | Block 9 W1D2 (audit pass — was substituted)    |
-| Single Arm DB Push Press         | `c78158b0-3082-48b4-99e0-20d24fbe2d9f` | weight_reps | dumbbell        | shoulders  | _pending_         | Block 9 W1D5 (audit pass — was substituted)    |
+| Title                            | ID                                     | Type        | Equipment       | Muscle     | Demo URL                                                | Notes                                          |
+| -------------------------------- | -------------------------------------- | ----------- | --------------- | ---------- | ------------------------------------------------------- | ---------------------------------------------- |
+| Banded Plank Walkout             | `ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66` | reps_only   | resistance_band | abdominals | https://www.youtube.com/watch?v=oB-8RZBZQG8             | Block 9 W1D2 warmup primitive                  |
+| Hollow Body Hold                 | `8c2bbcb2-cf0f-4029-aa77-c294f6e7a693` | duration    | none            | abdominals | https://www.youtube.com/watch?v=JnuYfsJ3CKg             | Block 9 W1D5 core anchor (isometric, ≠ rock)   |
+| Suitcase Deadlift                | `45e60221-6618-4055-9f14-9611e353df79` | weight_reps | kettlebell      | glutes     | https://www.youtube.com/watch?v=dj3lWcYMZQg             | Block 8 W5D2 anti-lateral-flexion              |
+| Z Press                          | `884efe63-16d9-4f83-b1ab-3b334715b308` | weight_reps | barbell         | shoulders  | https://www.youtube.com/watch?v=8CR-WckW3LY             | Block 7/8 seated OHP, no leg drive             |
+| Copenhagen Plank                 | `397dd589-27a2-47d1-a864-f6a9a98f0b0c` | duration    | none            | adductors  | https://www.youtube.com/watch?v=tj8trAmxLe0             | Block 7/8 adductor / anti-rotation             |
+| Rope Slams                       | `8001b2fd-6984-4e6a-aa61-dcd437a5b53e` | reps_only   | other           | full_body  | https://www.youtube.com/watch?v=aZojja9em0I             | Block 3 conditioning finisher                  |
+| Chest Supported External Rotation| `32d79e65-eb2a-4ae9-8561-f81a3c71bbad` | weight_reps | dumbbell        | shoulders  | https://www.youtube.com/watch?v=2Ryroega_wk             | Block 8 W5D2 rotator-cuff prehab               |
+| Single Leg Banded Hamstring Curl | `fafd204e-ed13-4ec5-a764-43e8743d3935` | reps_only   | resistance_band | hamstrings | https://www.youtube.com/watch?v=riYiKc0_0Fs             | Block 9 W1D5 posterior-chain accessory         |
+| Front Rack Walking Lunge         | `17c4f4ad-c0ae-4729-a34b-d450380ad250` | weight_reps | dumbbell        | quadriceps | https://www.youtube.com/watch?v=wpYr3tVus3Q             | Block 9 W1D2 (audit pass — was substituted)    |
+| Single Arm DB Push Press         | `c78158b0-3082-48b4-99e0-20d24fbe2d9f` | weight_reps | dumbbell        | shoulders  | https://www.youtube.com/watch?v=ycv3PI0YVsg             | Block 9 W1D5 (audit pass — was substituted)    |
+
+**Variation demos** (Hevy template + specific cue — saved here for reuse since they're not customs):
+
+| Variation                          | Hevy template                        | Demo URL                                    |
+| ---------------------------------- | ------------------------------------ | ------------------------------------------- |
+| Toe Elevated DB RDL                | Romanian Deadlift (Dumbbell)         | https://www.youtube.com/watch?v=4-l6t_ziW8I |
+| Alternating DB Bench Press         | Bench Press (Dumbbell)               | https://www.youtube.com/watch?v=xPR-LN2ppx0 |
+| Single Arm Seated DB Shoulder Press| Shoulder Press (Dumbbell)            | https://www.youtube.com/watch?v=MZdT1-Bv9Dg |
+| Chin Grip Lat Pulldown             | Lat Pulldown - Close Grip (Cable)    | https://www.youtube.com/watch?v=fLnD4BYg7nU |
 
 The Hevy API has no template DELETE endpoint, so any mistakenly-created
 duplicates have to be removed manually from the Hevy app (custom
@@ -169,6 +178,19 @@ duplicate has been fixed in `hevy.py`.
   instead, since hamstring stimulus is the same).
 - **Custom-exercise quota**: hit a 403 if exceeded. Block 1 added 8
   custom templates — monitor before bulk-creating in future blocks.
+- **Demo links for non-built-in exercises.** Every custom exercise and
+  every variation that Hevy's template doesn't capture must include a
+  `Demo: <youtube-url>` line in its notes. Skip when Hevy's built-in
+  demo is already the canonical version (Bench / Squat / Deadlift /
+  OHP / Plank / Russian Twist etc.). Find with WebFetch verification
+  — don't invent URLs. Demos used in Block 1 are tabulated above; reuse
+  them in future blocks rather than re-searching.
+- **Adding Demo lines programmatically:** YAML notes blocks come in
+  two flavors — multi-line `notes: |` and single-line `notes: "..."`.
+  When editing in bulk, an indent-aware insertion is required for the
+  `|` form (the Demo line must live within the block, not after the
+  next field). `/tmp/add_demos.py` from the 2026-05-11 session has the
+  reference implementation if a similar bulk pass is needed later.
 - **Use Hevy set types** (`type:` in YAML) for intent that isn't just
   reps × weight:
     - `warmup` — ramping sets that shouldn't count toward working volume.
