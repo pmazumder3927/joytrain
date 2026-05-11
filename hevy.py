@@ -152,6 +152,9 @@ def _expand_sets(raw_sets: list[dict]) -> list[dict]:
 
 
 def _build_set(s: dict) -> dict:
+    """Build a routine set payload. Hevy rejects `rpe` on routine sets
+    (it's only logged during a workout) so we strip it here — the caller
+    is responsible for folding per-set RPE prescription into exercise notes."""
     rpe = s.get("rpe")
     if rpe is not None and float(rpe) not in ALLOWED_RPE:
         sys.exit(f"RPE must be one of {sorted(ALLOWED_RPE)}, got {rpe}")
@@ -162,9 +165,44 @@ def _build_set(s: dict) -> dict:
         "distance_meters": s.get("distance_meters"),
         "duration_seconds": s.get("duration_seconds"),
         "custom_metric": s.get("custom_metric"),
-        "rpe": rpe,
     }
+    rng = s.get("rep_range")
+    if rng:
+        payload["rep_range"] = {"start": rng[0], "end": rng[1]} if isinstance(rng, (list, tuple)) else rng
     return payload
+
+
+def _format_set_prescription(sets: list[dict]) -> str:
+    """Build a short, human-readable per-set summary including RPE — fed
+    into the exercise notes since Hevy strips RPE from routine sets."""
+    parts = []
+    i = 1
+    while i <= len(sets):
+        s = sets[i - 1]
+        # Group consecutive identical sets
+        run = 1
+        while i + run <= len(sets) and sets[i + run - 1] == s:
+            run += 1
+        bits = []
+        if s.get("reps") is not None:
+            bits.append(f"{s['reps']} reps")
+        if s.get("duration_seconds") is not None:
+            bits.append(f"{s['duration_seconds']}s")
+        if s.get("distance_meters") is not None:
+            bits.append(f"{s['distance_meters']}m")
+        w = _weight_kg(s)
+        if w is not None:
+            lb = round(w / LB_TO_KG)
+            bits.append(f"@ {lb} lb")
+        if s.get("rpe") is not None:
+            bits.append(f"RPE {s['rpe']}")
+        if not bits:
+            i += run
+            continue
+        label = f"Set {i}" if run == 1 else f"Sets {i}-{i+run-1}"
+        parts.append(f"{label}: {' '.join(bits)}")
+        i += run
+    return " · ".join(parts)
 
 
 def build_routine_payload(spec: dict, exercises: list[dict]) -> tuple[dict, str | None]:
@@ -195,12 +233,22 @@ def build_routine_payload(spec: dict, exercises: list[dict]) -> tuple[dict, str 
             ss_id = superset_ids[ss_key]
 
         sets = _expand_sets(list(ex.get("sets", [])))
+
+        # Hevy strips rpe/rep_range from routine notes display, so synthesize
+        # a prescription line and prepend it to the exercise notes.
+        prescription = _format_set_prescription(sets)
+        user_notes = ex.get("notes") or ""
+        if prescription and prescription not in user_notes:
+            notes = f"{prescription}\n{user_notes}".strip() if user_notes else prescription
+        else:
+            notes = user_notes or None
+
         out_exercises.append(
             {
                 "exercise_template_id": tmpl["id"],
                 "superset_id": ss_id,
                 "rest_seconds": ex.get("rest_seconds"),
-                "notes": ex.get("notes") or None,
+                "notes": notes,
                 "sets": [_build_set(s) for s in sets],
             }
         )
@@ -268,20 +316,24 @@ def cmd_push(args):
         }
         r = s.put(f"{BASE_URL}/routines/{existing_id}", json=put_payload)
         r.raise_for_status()
-        routine = r.json().get("routine") or r.json()
-        print(f"updated routine {existing_id}: {routine.get('title') if isinstance(routine, dict) else ''}")
+        body = r.json()
+        node = body.get("routine") if isinstance(body, dict) else body
+        if isinstance(node, list):
+            node = node[0] if node else None
+        title = node.get("title") if isinstance(node, dict) else payload["routine"]["title"]
+        print(f"updated routine {existing_id}: {title}")
     else:
         r = s.post(f"{BASE_URL}/routines", json=payload)
         r.raise_for_status()
         body = r.json()
-        # API returns either {routine:{...}} or [{...}] depending on version
-        routine = body.get("routine") if isinstance(body, dict) else None
-        if routine is None and isinstance(body, list) and body:
-            routine = body[0]
-        rid = routine["id"] if routine else None
+        # Response: {"routine": [{...}]} (list with one entry)
+        node = body.get("routine") if isinstance(body, dict) else body
+        if isinstance(node, list):
+            node = node[0] if node else None
+        rid = node["id"] if node else None
         idx[key] = rid
         _save_pushed_index(idx)
-        print(f"created routine {rid}: {routine.get('title') if routine else ''}")
+        print(f"created routine {rid}: {node.get('title') if node else ''}")
     print("open Hevy on your phone/web to start the workout.")
 
 

@@ -1,0 +1,46 @@
+# Smoke-test workout — feel free to delete after verifying it lands in Hevy.
+# Format reference: see README in joytrain/. Top-level keys:
+#   title:    routine title
+#   folder:   routine folder name (auto-created if missing)
+#   notes:    routine-level notes (visible at top in Hevy)
+#   exercises: list. each item:
+#     exercise:     canonical Hevy name (run `./hevy.py search "..."` to find)
+#     rest_seconds: int, optional
+#     notes:        exercise-level prescription (RPE/load/cue)
+#     superset:     any label — exercises sharing the same label are supersetted
+#     sets:         list. each set: { reps, weight_lb|weight_kg, rpe, type, count }
+#                   `count: N` repeats the same set N times.
+#                   rpe must be one of 6, 7, 7.5, 8, 8.5, 9, 9.5, 10.
+
+title: "Sample Lower Strength — Smoke Test"
+folder: "Programmed by Claude"
+notes: |
+  Smoke test from joytrain bootstrap. Delete after verifying.
+  Block 1 reboot: ~RPE 7, leave 3 in the tank.
+
+exercises:
+  - exercise: "Squat (Barbell)"
+    rest_seconds: 180
+    notes: "5×5 @ ~70-75% 1RM. Brace hard, controlled descent."
+    sets:
+      - { count: 2, reps: 5, weight_lb: 185, rpe: 7 }
+      - { count: 3, reps: 5, weight_lb: 195, rpe: 7.5 }
+
+  - exercise: "Romanian Deadlift (Barbell)"
+    rest_seconds: 120
+    notes: "Hinge, soft knees, feel hamstrings stretch."
+    sets:
+      - { count: 3, reps: 8, weight_lb: 155, rpe: 7 }
+
+  - superset: A
+    exercise: "Bulgarian Split Squat"
+    rest_seconds: 60
+    notes: "3s eccentric. Pause at the bottom."
+    sets:
+      - { count: 3, reps: 8 }
+
+  - superset: A
+    exercise: "Plank"
+    rest_seconds: 60
+    sets:
+      - { count: 3, duration_seconds: 45 }
