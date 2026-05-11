@@ -137,18 +137,18 @@ When `context/training-history.md` names a movement that doesn't exist in Hevy's
 add it via `hevy.py create-exercise` and reference it here. Use the ID
 in YAML to avoid `ambiguous exact match` if duplicates exist.
 
-| Title                            | ID                                     | Type        | Equipment       | Muscle     | Notes                                          |
-| -------------------------------- | -------------------------------------- | ----------- | --------------- | ---------- | ---------------------------------------------- |
-| Banded Plank Walkout             | `ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66` | reps_only   | resistance_band | abdominals | Block 9 W1D2 warmup primitive                  |
-| Hollow Body Hold                 | `8c2bbcb2-cf0f-4029-aa77-c294f6e7a693` | duration    | none            | abdominals | Block 9 W1D5 core anchor (isometric, ≠ rock)   |
-| Suitcase Deadlift                | `45e60221-6618-4055-9f14-9611e353df79` | weight_reps | kettlebell      | glutes     | Block 8 W5D2 anti-lateral-flexion              |
-| Z Press                          | `884efe63-16d9-4f83-b1ab-3b334715b308` | weight_reps | barbell         | shoulders  | Block 7/8 seated OHP, no leg drive             |
-| Copenhagen Plank                 | `397dd589-27a2-47d1-a864-f6a9a98f0b0c` | duration    | none            | adductors  | Block 7/8 adductor / anti-rotation             |
-| Rope Slams                       | `8001b2fd-6984-4e6a-aa61-dcd437a5b53e` | reps_only   | other           | full_body  | Block 3 conditioning finisher                  |
-| Chest Supported External Rotation| `32d79e65-eb2a-4ae9-8561-f81a3c71bbad` | weight_reps | dumbbell        | shoulders  | Block 8 W5D2 rotator-cuff prehab               |
-| Single Leg Banded Hamstring Curl | `fafd204e-ed13-4ec5-a764-43e8743d3935` | reps_only   | resistance_band | hamstrings | Block 9 W1D5 posterior-chain accessory         |
-| Front Rack Walking Lunge         | `17c4f4ad-c0ae-4729-a34b-d450380ad250` | weight_reps | dumbbell        | quadriceps | Block 9 W1D2 (audit pass — was substituted)    |
-| Single Arm DB Push Press         | `c78158b0-3082-48b4-99e0-20d24fbe2d9f` | weight_reps | dumbbell        | shoulders  | Block 9 W1D5 (audit pass — was substituted)    |
+| Title                            | ID                                     | Type        | Equipment       | Muscle     | Demo URL          | Notes                                          |
+| -------------------------------- | -------------------------------------- | ----------- | --------------- | ---------- | ----------------- | ---------------------------------------------- |
+| Banded Plank Walkout             | `ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66` | reps_only   | resistance_band | abdominals | _pending_         | Block 9 W1D2 warmup primitive                  |
+| Hollow Body Hold                 | `8c2bbcb2-cf0f-4029-aa77-c294f6e7a693` | duration    | none            | abdominals | _pending_         | Block 9 W1D5 core anchor (isometric, ≠ rock)   |
+| Suitcase Deadlift                | `45e60221-6618-4055-9f14-9611e353df79` | weight_reps | kettlebell      | glutes     | _pending_         | Block 8 W5D2 anti-lateral-flexion              |
+| Z Press                          | `884efe63-16d9-4f83-b1ab-3b334715b308` | weight_reps | barbell         | shoulders  | _pending_         | Block 7/8 seated OHP, no leg drive             |
+| Copenhagen Plank                 | `397dd589-27a2-47d1-a864-f6a9a98f0b0c` | duration    | none            | adductors  | _pending_         | Block 7/8 adductor / anti-rotation             |
+| Rope Slams                       | `8001b2fd-6984-4e6a-aa61-dcd437a5b53e` | reps_only   | other           | full_body  | _pending_         | Block 3 conditioning finisher                  |
+| Chest Supported External Rotation| `32d79e65-eb2a-4ae9-8561-f81a3c71bbad` | weight_reps | dumbbell        | shoulders  | _pending_         | Block 8 W5D2 rotator-cuff prehab               |
+| Single Leg Banded Hamstring Curl | `fafd204e-ed13-4ec5-a764-43e8743d3935` | reps_only   | resistance_band | hamstrings | _pending_         | Block 9 W1D5 posterior-chain accessory         |
+| Front Rack Walking Lunge         | `17c4f4ad-c0ae-4729-a34b-d450380ad250` | weight_reps | dumbbell        | quadriceps | _pending_         | Block 9 W1D2 (audit pass — was substituted)    |
+| Single Arm DB Push Press         | `c78158b0-3082-48b4-99e0-20d24fbe2d9f` | weight_reps | dumbbell        | shoulders  | _pending_         | Block 9 W1D5 (audit pass — was substituted)    |
 
 The Hevy API has no template DELETE endpoint, so any mistakenly-created
 duplicates have to be removed manually from the Hevy app (custom

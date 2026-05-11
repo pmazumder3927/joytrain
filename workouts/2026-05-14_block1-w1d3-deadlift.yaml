@@ -67,6 +67,7 @@ exercises:
     rest_seconds: 30
     notes: |
       WARMUP 5/5 — bracing primer. 8 walkouts. Light band at the wrists.
+      Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8
     sets:
       - { reps: 8, type: warmup }
 
@@ -94,6 +95,7 @@ exercises:
     notes: |
       Block 9 W1D5 spec: 4×45 sec. Anti-extension core. Low back glued
       to floor — if it lifts, bend knees to shorten lever.
+      Demo: https://www.youtube.com/watch?v=JnuYfsJ3CKg
     sets:
       - { count: 4, duration_seconds: 45 }
 
@@ -113,6 +115,7 @@ exercises:
       Block 9 W1D5 spec "Toe Elevated DB RDL — 3×6". Stand with toes on
       a plate (heels lower). Hinge from hips. Slow eccentric, hamstrings
       should scream.
+      Demo: https://www.youtube.com/watch?v=4-l6t_ziW8I
     sets:
       - { count: 3, reps: 6, weight_lb: 45 }
 
@@ -123,6 +126,7 @@ exercises:
       held at the shoulder. Dip-drive-press, alternating arms. 5 reps
       EACH arm. Anti-rotation core demand makes this a different
       stimulus than bilateral barbell push press.
+      Demo: https://www.youtube.com/watch?v=ycv3PI0YVsg
     sets:
       - { count: 3, reps: 5, weight_lb: 35 }
 
@@ -150,6 +154,7 @@ exercises:
       Block 9 W1D5 spec "Single Leg Banded Hamstring Curl — 2×20".
       Anchor a band low (or use rack base). Lie face down, loop around
       one ankle, curl the heel to the glute. 20 reps EACH leg.
+      Demo: https://www.youtube.com/watch?v=riYiKc0_0Fs
     sets:
       - { count: 2, reps: 20 }
 

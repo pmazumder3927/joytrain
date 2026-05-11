@@ -56,7 +56,7 @@ exercises:
 
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5 — bracing primer. 8 walkouts."
+    notes: "WARMUP 5/5 — bracing primer. 8 walkouts. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
     sets:
       - { reps: 8, type: warmup }
 
@@ -83,6 +83,7 @@ exercises:
       Block 8 W5D2 spec: 4×10. Lay face-down on an incline bench. Light
       DBs (5-10 lb). Elbow pinned at 90°, externally rotate the DB up.
       This is PREHAB. Don't ego-load.
+      Demo: https://www.youtube.com/watch?v=2Ryroega_wk
     sets:
       - { count: 4, reps: 10, weight_lb: 8 }
 
@@ -104,6 +105,7 @@ exercises:
       set MAX". Alternating means: press right, hold left at bottom;
       press left, hold right at bottom. 8 reps EACH arm = 16 total per
       set. Last set is rep MAX.
+      Demo: https://www.youtube.com/watch?v=xPR-LN2ppx0
     sets:
       - { reps: 16, weight_lb: 35 }
       - { reps: 16, weight_lb: 35 }
@@ -118,6 +120,7 @@ exercises:
       12 each side per set. Post-audit: bumped from 53 → 71 lb (32kg
       KB) — 24kg was too light for an 11-yr lifter's anti-lateral-
       flexion baseline.
+      Demo: https://www.youtube.com/watch?v=dj3lWcYMZQg
     sets:
       - { count: 3, reps: 24, weight_lb: 71 }
 

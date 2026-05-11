@@ -38,7 +38,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5 — 8 walkouts."
+    notes: "WARMUP 5/5 — 8 walkouts. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
     sets:
       - { reps: 8, type: warmup }
 
@@ -61,7 +61,7 @@ exercises:
 
   - exercise: "17c4f4ad-c0ae-4729-a34b-d450380ad250"  # Front Rack Walking Lunge
     rest_seconds: 90
-    notes: "Front rack DBs at shoulders. 12 reps/set (6 each leg)."
+    notes: "Front rack DBs at shoulders. 12 reps/set (6 each leg). Demo: https://www.youtube.com/watch?v=wpYr3tVus3Q"
     sets:
       - { count: 3, reps: 12, weight_lb: 30 }
 
@@ -88,7 +88,7 @@ exercises:
   - superset: B
     exercise: "397dd589-27a2-47d1-a864-f6a9a98f0b0c"  # Copenhagen Plank
     rest_seconds: 45
-    notes: "Adductor + anti-rotation hold. 25s each side."
+    notes: "Adductor + anti-rotation hold. 25s each side. Demo: https://www.youtube.com/watch?v=tj8trAmxLe0"
     sets:
       - { count: 3, duration_seconds: 25 }
 

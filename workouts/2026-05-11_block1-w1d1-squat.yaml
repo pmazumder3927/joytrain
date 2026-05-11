@@ -79,6 +79,7 @@ exercises:
       (anti-shoulder-adduction tension), walk out from a standing-pike
       forward fold into a plank, walk back. 8 walkouts. Direct Block 9
       W1D2 warmup spec.
+      Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8
     sets:
       - { reps: 8, type: warmup }
 
@@ -117,6 +118,7 @@ exercises:
       per set (6 each leg, alternating). Block 9 W1D2 spec named this
       movement specifically — front rack matters because it hits core +
       upper back, not just legs.
+      Demo: https://www.youtube.com/watch?v=wpYr3tVus3Q
     sets:
       - { count: 3, reps: 12, weight_lb: 25 }
 
@@ -162,6 +164,7 @@ exercises:
       bottom leg HOVERS, adductor of top leg presses into the bench.
       20s each side per set. Start short; scale duration if you
       can't hold form.
+      Demo: https://www.youtube.com/watch?v=tj8trAmxLe0
     sets:
       - { count: 3, duration_seconds: 20 }
 

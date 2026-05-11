@@ -29,7 +29,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5 — 8 walkouts."
+    notes: "WARMUP 5/5 — 8 walkouts. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
     sets:
       - { reps: 8, type: warmup }
 
@@ -48,7 +48,7 @@ exercises:
 
   - exercise: "8c2bbcb2-cf0f-4029-aa77-c294f6e7a693"  # Hollow Body Hold
     rest_seconds: 60
-    notes: "4×45 sec. Low back glued to floor."
+    notes: "4×45 sec. Low back glued to floor. Demo: https://www.youtube.com/watch?v=JnuYfsJ3CKg"
     sets:
       - { count: 4, duration_seconds: 45 }
 
@@ -61,13 +61,13 @@ exercises:
   - superset: A
     exercise: "Romanian Deadlift (Dumbbell)"
     rest_seconds: 75
-    notes: "Toe-elevated. 3×6, +5 lb."
+    notes: "Toe-elevated. 3×6, +5 lb. Demo: https://www.youtube.com/watch?v=4-l6t_ziW8I"
     sets:
       - { count: 3, reps: 6, weight_lb: 50 }
 
   - exercise: "c78158b0-3082-48b4-99e0-20d24fbe2d9f"  # Single Arm DB Push Press
     rest_seconds: 90
-    notes: "Single DB push press, alternating arms. 5 each arm. +5 lb."
+    notes: "Single DB push press, alternating arms. 5 each arm. +5 lb. Demo: https://www.youtube.com/watch?v=ycv3PI0YVsg"
     sets:
       - { count: 3, reps: 5, weight_lb: 40 }
 
@@ -86,7 +86,7 @@ exercises:
   - superset: B
     exercise: "fafd204e-ed13-4ec5-a764-43e8743d3935"  # Single Leg Banded Hamstring Curl
     rest_seconds: 45
-    notes: "2×20 each leg. Heavier band if W1 was easy."
+    notes: "2×20 each leg. Heavier band if W1 was easy. Demo: https://www.youtube.com/watch?v=riYiKc0_0Fs"
     sets:
       - { count: 2, reps: 20 }
   - superset: B

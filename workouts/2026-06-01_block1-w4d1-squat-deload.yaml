@@ -36,7 +36,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5."
+    notes: "WARMUP 5/5. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
     sets:
       - { reps: 8, type: warmup }
 

@@ -101,6 +101,7 @@ exercises:
       Block 9 W1D4 spec "1 Arm Seated Press — 3×6". Single-arm, seated,
       back supported. Press one DB overhead, alternating arms. 6 reps
       EACH arm per set. Brace anti-lateral-flexion.
+      Demo: https://www.youtube.com/watch?v=MZdT1-Bv9Dg
     sets:
       - { count: 3, reps: 6, weight_lb: 35 }
 
@@ -110,6 +111,7 @@ exercises:
     notes: |
       Block 9 W1D4 spec "Chin Pulldown — 3×6". Underhand (chin) grip,
       shoulder-width, drive elbows down into the lats.
+      Demo: https://www.youtube.com/watch?v=fLnD4BYg7nU
     sets:
       - { count: 3, reps: 6, weight_lb: 110 }
 

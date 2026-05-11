@@ -29,7 +29,7 @@ exercises:
       - { reps: 5, type: warmup }
   - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout
     rest_seconds: 30
-    notes: "WARMUP 5/5 — 8 walkouts."
+    notes: "WARMUP 5/5 — 8 walkouts. Demo: https://www.youtube.com/watch?v=oB-8RZBZQG8"
     sets:
       - { reps: 8, type: warmup }
 
@@ -47,7 +47,7 @@ exercises:
 
   - exercise: "32d79e65-eb2a-4ae9-8561-f81a3c71bbad"  # Chest Supported External Rotation
     rest_seconds: 60
-    notes: "Prehab. 4×10, light DBs (5-10 lb)."
+    notes: "Prehab. 4×10, light DBs (5-10 lb). Demo: https://www.youtube.com/watch?v=2Ryroega_wk"
     sets:
       - { count: 4, reps: 10, weight_lb: 8 }
 
@@ -59,7 +59,7 @@ exercises:
 
   - exercise: "Bench Press (Dumbbell)"
     rest_seconds: 90
-    notes: "Alternating DB bench. 8 each arm. Last set MAX. +5 lb."
+    notes: "Alternating DB bench. 8 each arm. Last set MAX. +5 lb. Demo: https://www.youtube.com/watch?v=xPR-LN2ppx0"
     sets:
       - { reps: 16, weight_lb: 40 }
       - { reps: 16, weight_lb: 40 }
@@ -68,7 +68,7 @@ exercises:
 
   - exercise: "45e60221-6618-4055-9f14-9611e353df79"  # Suitcase Deadlift
     rest_seconds: 75
-    notes: "3×12 each side. +9 lb (next KB up, 36kg)."
+    notes: "3×12 each side. +9 lb (next KB up, 36kg). Demo: https://www.youtube.com/watch?v=dj3lWcYMZQg"
     sets:
       - { count: 3, reps: 24, weight_lb: 79 }
 

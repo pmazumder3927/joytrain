@@ -169,3 +169,41 @@ joytrain/
   so the user can navigate cycles in the Hevy app.
 - Keep exercise notes short and prescriptive — cue, tempo, target. The per-set
   prescription string is auto-prepended.
+
+### Demo links (STANDARD — applies to every exercise)
+
+Every exercise in a workout YAML must include a `Demo:` line in its
+`notes:` field linking to a quality demonstration video. Hevy renders
+URLs in exercise notes as tappable links in the app.
+
+- **Required for:** every custom exercise (Hevy has no built-in demo
+  for these) and every movement variation where the Hevy template
+  doesn't capture the specific cue (front-rack walking lunge,
+  toe-elevated DB RDL, single-arm seated press, chin-grip pulldown,
+  alternating DB bench, etc.).
+- **Skip when Hevy already has a built-in demo for the exact
+  movement.** Adding a YouTube link in addition is noise — Hevy's
+  built-in is the canonical reference. This applies to Bench Press,
+  Squat, Deadlift, OHP, Pull-Up, Plank, Russian Twist, and most
+  named-pattern templates.
+- **Source quality:** prefer coach-led videos under 2 minutes
+  (Squat University, Athlean-X, Renaissance Periodization, Stronger
+  by Science, Juggernaut, Jeff Nippard, EliteFTS, Mark Bell are all
+  good defaults). Avoid: shaky phone videos, ego-lifting freestyle
+  reps, age-restricted content, livestreams.
+- **Verify before adding.** WebFetch the URL and confirm the page
+  title matches the exercise before writing it into a YAML. Don't
+  invent URLs — broken demo links are worse than no link.
+- **Format in the YAML notes:**
+
+  ```yaml
+  - exercise: "Pause Squat (Barbell)"
+    notes: |
+      1s pause at the bottom every rep. Brace before unrack.
+      Demo: https://www.youtube.com/watch?v=XXXX
+  ```
+
+When introducing a new custom exercise via `create-exercise`, find
+the demo at the same time you create the template, and store the URL
+in `workouts/_block_log.md`'s custom-exercises table (add a "Demo"
+column) so it's reusable across future blocks.

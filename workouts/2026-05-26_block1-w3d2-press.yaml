@@ -54,13 +54,13 @@ exercises:
   - superset: A
     exercise: "Shoulder Press (Dumbbell)"
     rest_seconds: 60
-    notes: "Single arm seated. +5 lb."
+    notes: "Single arm seated. +5 lb. Demo: https://www.youtube.com/watch?v=MZdT1-Bv9Dg"
     sets:
       - { count: 3, reps: 6, weight_lb: 45 }
   - superset: A
     exercise: "Lat Pulldown - Close Grip (Cable)"
     rest_seconds: 60
-    notes: "Chin grip. +10 lb."
+    notes: "Chin grip. +10 lb. Demo: https://www.youtube.com/watch?v=fLnD4BYg7nU"
     sets:
       - { count: 3, reps: 6, weight_lb: 130 }
 
