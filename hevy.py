@@ -70,6 +70,53 @@ def cmd_sync_exercises(_args):
     print(f"cached {len(items)} exercise templates → {EXERCISES_CACHE}")
 
 
+CUSTOM_EXERCISE_TYPES = {
+    "weight_reps", "reps_only", "bodyweight_reps", "bodyweight_assisted_reps",
+    "duration", "weight_duration", "distance_duration", "short_distance_weight",
+}
+EQUIPMENT_CATEGORIES = {
+    "none", "barbell", "dumbbell", "kettlebell", "machine",
+    "plate", "resistance_band", "suspension", "other",
+}
+MUSCLE_GROUPS = {
+    "abdominals", "shoulders", "biceps", "triceps", "forearms",
+    "quadriceps", "hamstrings", "calves", "glutes", "abductors",
+    "adductors", "lats", "upper_back", "traps", "lower_back",
+    "chest", "cardio", "neck", "full_body", "other",
+}
+
+
+def cmd_create_exercise(args):
+    """Create a custom exercise template via POST /v1/exercise_templates and
+    re-sync the local cache so the new template is searchable."""
+    body = {
+        "exercise": {
+            "title": args.title,
+            "exercise_type": args.type,
+            "equipment_category": args.equipment,
+            "muscle_group": args.muscle,
+        }
+    }
+    if args.other:
+        body["exercise"]["other_muscles"] = list(args.other)
+    s = session()
+    r = s.post(f"{BASE_URL}/exercise_templates", json=body)
+    if r.status_code == 403:
+        sys.exit("403: exceeded custom exercise limit. Delete unused custom exercises in Hevy first.")
+    if r.status_code >= 400:
+        sys.exit(f"{r.status_code}: {r.text}")
+    # The endpoint returns the new template ID, but currently as a plain
+    # text/html body (not the JSON object documented in the OpenAPI spec).
+    # Accept either shape.
+    try:
+        out = r.json()
+        new_id = out.get("id") if isinstance(out, dict) else out
+    except ValueError:
+        new_id = r.text.strip().strip('"')
+    print(f"created custom exercise {new_id!r}: {args.title}")
+    cmd_sync_exercises(None)
+
+
 def load_exercises() -> list[dict]:
     if not EXERCISES_CACHE.exists():
         sys.exit("no exercise cache. run: ./hevy.py sync-exercises")
@@ -379,6 +426,16 @@ def main():
     sp.set_defaults(func=cmd_routines)
 
     sub.add_parser("whoami").set_defaults(func=cmd_whoami)
+
+    sp = sub.add_parser("create-exercise", help="create a custom exercise template")
+    sp.add_argument("--title", required=True, help='e.g. "Banded Plank Walkout"')
+    sp.add_argument("--type", required=True, choices=sorted(CUSTOM_EXERCISE_TYPES))
+    sp.add_argument("--equipment", required=True, choices=sorted(EQUIPMENT_CATEGORIES))
+    sp.add_argument("--muscle", required=True, choices=sorted(MUSCLE_GROUPS),
+                    help="primary muscle group")
+    sp.add_argument("--other", nargs="*", default=[], choices=sorted(MUSCLE_GROUPS),
+                    help="secondary muscle groups")
+    sp.set_defaults(func=cmd_create_exercise)
 
     args = p.parse_args()
     args.func(args)

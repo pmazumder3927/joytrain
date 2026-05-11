@@ -7,7 +7,7 @@ it to the user's Hevy account.
 
 User prompts something like:
 
-> @first.md — feedback: hip felt cranky on Tuesday's deadlift. Program today.
+> @context/training-history.md — feedback: hip felt cranky on Tuesday's deadlift. Program today.
 
 You then:
 
@@ -30,6 +30,12 @@ rather than creating a new one.
 .venv/bin/python hevy.py folders                 # list routine folders
 .venv/bin/python hevy.py routines                # list user's routines
 .venv/bin/python hevy.py whoami                  # sanity check API key
+.venv/bin/python hevy.py create-exercise \       # add a missing exercise as a custom template
+    --title "Banded Plank Walkout" \
+    --type reps_only \
+    --equipment resistance_band \
+    --muscle abdominals \
+    --other shoulders full_body
 ```
 
 The pushed-routine index lives at `.hevy_cache/pushed.json` (keyed by absolute
@@ -77,6 +83,30 @@ exercises:
 - `count: N` repeats the same set N times — use this instead of pasting
   identical sets manually.
 
+### Adding missing exercises
+
+If `context/training-history.md` (or any source) names a movement that doesn't exist in
+Hevy's library, **create it as a custom template — do not silently
+substitute a different exercise.** Use `create-exercise` (above), then
+re-push the routine.
+
+`type` enum: `weight_reps`, `reps_only`, `bodyweight_reps`,
+`bodyweight_assisted_reps`, `duration`, `weight_duration`,
+`distance_duration`, `short_distance_weight`.
+
+`equipment` enum: `none`, `barbell`, `dumbbell`, `kettlebell`, `machine`,
+`plate`, `resistance_band`, `suspension`, `other`.
+
+`muscle` / `other` enum: `abdominals`, `shoulders`, `biceps`, `triceps`,
+`forearms`, `quadriceps`, `hamstrings`, `calves`, `glutes`, `abductors`,
+`adductors`, `lats`, `upper_back`, `traps`, `lower_back`, `chest`,
+`cardio`, `neck`, `full_body`, `other`.
+
+The API has no `DELETE /v1/exercise_templates/{id}` — to remove a
+mistakenly-created custom exercise, delete it manually in the Hevy app.
+There is also a hidden custom-exercise quota; the CLI surfaces a 403 if
+hit.
+
 ### Important Hevy API quirks
 
 - **`rpe` and `rep_range` are NOT stored on routine sets** (only on logged
@@ -91,7 +121,7 @@ exercises:
 
 ### Common exercise names (Hevy canonical)
 
-The user's `first.md` uses lifter shorthand. Map to Hevy:
+The user's `context/training-history.md` uses lifter shorthand. Map to Hevy:
 
 | user says           | Hevy canonical                       |
 | ------------------- | ------------------------------------ |
@@ -118,10 +148,13 @@ joytrain/
 ├── .hevy_cache/         # exercise + pushed-routine cache (gitignored)
 ├── .venv/               # python venv (gitignored)
 ├── CLAUDE.md            # this file
-├── first.md             # user's training history (long-form context)
+├── README.md
+├── context/
+│   └── training-history.md  # user's training history (long-form context)
 ├── hevy.py              # CLI
 ├── requirements.txt
 └── workouts/
+    ├── _block_log.md    # running trail of programmed sessions / macrocycle plan
     └── YYYY-MM-DD_<slug>.yaml
 ```
 
@@ -129,7 +162,7 @@ joytrain/
 
 - Per-set RPE targets are valuable — write them. They land in the exercise
   notes automatically.
-- The user has 11+ years of strength history (see `first.md`). Use real loads
+- The user has 11+ years of strength history (see `context/training-history.md`). Use real loads
   derived from prior visible weights, not hypothetical %1RM unless they ask.
 - Naming: `YYYY-MM-DD_<short-slug>.yaml` (e.g. `2026-05-12_lower-strength.yaml`).
 - Folder convention: name the folder by the block (e.g. `"Block 1 — Base"`)

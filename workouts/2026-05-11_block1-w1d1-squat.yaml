@@ -1,0 +1,178 @@
+title: "Block 1 W1D1 — Pause Squat + Lower (Restart)"
+folder: "Block 1 — Restart"
+notes: |
+  MACROCYCLE 1 / BLOCK 1 / WEEK 1 / DAY 1 — restart kickoff.
+
+  Block 1 = 4 weeks, 4 days/week, modeled on Block 9 (Jul 2022 restart)
+  — training-history.md calls Block 9 "the best model for current restart" since
+  it was an explicit Week 1 block that already blended prior themes.
+  D1 anchor is Pause Back Squat, mirroring Block 9 W1D2.
+
+  TODAY IS CALIBRATION DAY. No current 1RM data — loads below are best
+  guesses (Block 8 W5D2 had pause squat ~176 lb / 80 kg @ 3RPM in 2022;
+  these are discounted). Pick whatever weight produces the prescribed
+  RPE — that load becomes the W1 reference for the next 3 weeks.
+
+  PROGRESSION (Block 1):
+    W1 (today): RPE 7-7.5 across   <-- you are here
+    W2 5/18:    +5%, target RPE 7.5
+    W3 5/25:    +5% again, target RPE 8
+    W4 6/1:     deload OR 3RM test on D1 (decide on 5/31)
+
+  CUES:
+    - Pause Squat: 1s pause at bottom EVERY rep. Brace before unrack.
+      Eyes forward, hips down between heels.
+    - Hip Thrust: glutes drive, ribs down, chin tucked, 1s pause at top.
+    - Walking Lunge: front-rack the DBs (held at the shoulders). Step
+      length long enough that front shin stays vertical.
+    - SLRDL: hinge from the hip, push the wall behind you back with
+      your heel, don't reach for the floor — stop where the hamstring
+      lengthens.
+    - Lateral Lunge: weight in the heel of the working leg, push the
+      hips back, knee tracks the toe.
+
+  POST-SESSION: write actual loads + RPE in the set notes. If a top set
+  felt easier than RPE 7, flag it — W2 needs to jump more than 5%.
+  Cranky joints (especially hips, knees, low back) get logged here too;
+  that's the feedback loop for the next session.
+
+exercises:
+  # ----- WARMUP (Block 9 W1D2 template, adapted) -----
+
+  - exercise: "Stretching"
+    rest_seconds: 0
+    notes: |
+      WARMUP 1/5 — general opener. Row 500m, jump rope 4-5 min, OR easy
+      jog (treadmill or outside). Goal: warm + slightly sweaty before
+      the mobility flow.
+    sets:
+      - { duration_seconds: 300, type: warmup }
+
+  - exercise: "Reverse Lunge (Dumbbell)"
+    rest_seconds: 30
+    notes: |
+      WARMUP 2/5 — goblet style. Hold ONE dumbbell at the chest. Slow,
+      controlled, 10 each leg = 20 total. Light load (20-25 lb).
+    sets:
+      - { reps: 20, weight_lb: 25, type: warmup }
+
+  - exercise: "Chest Supported Y Raise (Dumbbell)"
+    rest_seconds: 30
+    notes: |
+      WARMUP 3/5 — shoulder prehab. Light DBs (5-10 lb). Thumbs up,
+      arms make a Y. Squeeze the lower traps. 1×15.
+    sets:
+      - { reps: 15, weight_lb: 5, type: warmup }
+
+  - exercise: "Box Jump"
+    rest_seconds: 45
+    notes: |
+      WARMUP 4/5 — CNS primer. Low-moderate box (knee height-ish). Land
+      soft, stand fully, step down (don't jump down). 1×5.
+    sets:
+      - { reps: 5, type: warmup }
+
+  - exercise: "ac957bda-e1fb-4d7c-958c-0ff0e4fe6a66"  # Banded Plank Walkout (custom)
+    rest_seconds: 30
+    notes: |
+      WARMUP 5/5 — bracing primer. Loop a light band around the wrists
+      (anti-shoulder-adduction tension), walk out from a standing-pike
+      forward fold into a plank, walk back. 8 walkouts. Direct Block 9
+      W1D2 warmup spec.
+    sets:
+      - { reps: 8, type: warmup }
+
+  # ----- MAIN WORK -----
+
+  - exercise: "Pause Squat (Barbell)"
+    rest_seconds: 180
+    notes: |
+      ANCHOR LIFT. 1s pause at the BOTTOM on every rep — count it.
+      Block 9 W1D2 spec was 3×8 @ 60/63/65% — we mirror that pattern
+      but use absolute weights since no current 1RM exists.
+      Ramping warmup, then 3 working sets at RPE 7 → 7.5.
+      If top set @ 145 feels lighter than RPE 7, bump to 155 and log it.
+    sets:
+      - { reps: 5, weight_lb: 45, type: warmup }
+      - { reps: 5, weight_lb: 95, type: warmup }
+      - { reps: 3, weight_lb: 115, type: warmup }
+      - { reps: 8, weight_lb: 125, rpe: 7 }
+      - { reps: 8, weight_lb: 135, rpe: 7 }
+      - { reps: 8, weight_lb: 145, rpe: 7.5 }
+
+  - exercise: "Hip Thrust (Barbell)"
+    rest_seconds: 120
+    notes: |
+      SECOND COMPOUND. Direct copy of Block 9 W1D2 slot — 3×12.
+      Pause 1s at full extension every rep. Use a pad. RPE 7.
+      If 135 feels too easy, jump to 155 — glutes can take it.
+    sets:
+      - { count: 3, reps: 12, weight_lb: 135, rpe: 7 }
+
+  - exercise: "Walking Lunge (Dumbbell)"
+    rest_seconds: 90
+    notes: |
+      Front-racked: DBs held at the shoulders, elbows up. 12 total reps
+      per set (6 each leg, alternating). Block 9 W1D2 spec.
+    sets:
+      - { count: 3, reps: 12, weight_lb: 25 }
+
+  # ----- SUPERSET A: unilateral hinge + frontal plane -----
+
+  - superset: A
+    exercise: "Single Leg Romanian Deadlift (Dumbbell)"
+    rest_seconds: 60
+    notes: |
+      Block 9 W1D2 spec: 5,5,5,5,10 (last set is the burnout — drop
+      weight, hit 10/leg). DB in the OPPOSITE hand from the working
+      leg (contralateral). Slow eccentric, hinge from the hip.
+      Reps below are per-leg.
+    sets:
+      - { count: 4, reps: 5, weight_lb: 30 }
+      - { reps: 10, weight_lb: 20 }
+
+  - superset: A
+    exercise: "Lateral Lunge"
+    rest_seconds: 60
+    notes: |
+      Bodyweight today (add a goblet DB if RPE < 6). Block 9 W1D2 spec:
+      4×5. 5 each side per set. Hip/adductor mobility focus.
+    sets:
+      - { count: 4, reps: 5 }
+
+  # ----- CORE FINISHER (Block 9 W1D2 finisher, run as circuit B) -----
+
+  - exercise: "Plank"
+    rest_seconds: 60
+    notes: |
+      Block 9 spec: 3×1:20. If 80s feels easy by set 2, put a plate on
+      your back for set 3.
+    sets:
+      - { count: 3, duration_seconds: 80 }
+
+  - superset: B
+    exercise: "Sit Up (Weighted)"
+    rest_seconds: 45
+    notes: |
+      CORE CIRCUIT 1/3 — Block 9 W1D2 finisher. Hold a plate to the
+      chest. 3×20.
+    sets:
+      - { count: 3, reps: 20, weight_lb: 25 }
+
+  - superset: B
+    exercise: "Hanging Knee Raise"
+    rest_seconds: 45
+    notes: |
+      CORE CIRCUIT 2/3 — substitute for "hanging knee tucks". Knees to
+      chest, slow, no swing. 3×10.
+    sets:
+      - { count: 3, reps: 10 }
+
+  - superset: B
+    exercise: "Russian Twist (Weighted)"
+    rest_seconds: 45
+    notes: |
+      CORE CIRCUIT 3/3. Plate or DB at the chest. Both sides = 1 rep.
+      3×20.
+    sets:
+      - { count: 3, reps: 20, weight_lb: 25 }
