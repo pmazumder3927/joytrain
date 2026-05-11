@@ -18,10 +18,31 @@ arc.
 |     2 | Base strength            | 5 wk      | Block 1 (Apr–Jun 2021)           | 2026-06-08 → 2026-07-12         |
 |     3 | Strength intensification | 4 wk      | Block 2 (Jun 2021)               | 2026-07-13 → 2026-08-09         |
 |     4 | Heavy strength           | 5 wk      | Block 8 (Mar–Apr 2022)           | 2026-08-10 → 2026-09-13         |
-|     5 | Hypertrophy / GPP reset  | 4 wk      | Block 3 (Jul 2021)               | 2026-09-14 → 2026-10-11         |
+|   **TEST** | **1RM peak week**   | **1 wk**  | post-Block-4 peak                | **2026-09-14 → 2026-09-20**     |
+|     5 | Hypertrophy / GPP reset  | 4 wk      | Block 3 (Jul 2021)               | 2026-09-21 → 2026-10-18         |
 
 Dates after Block 1 are placeholders — recalibrate after each block based
 on calendar / feedback / readiness.
+
+**1RM / test days:**
+- **Block 2 W1 (2026-06-08 → 2026-06-12):** 3RM baseline tests on each
+  major lift. Block 1 was RPE-anchored because we had no current 1RM;
+  3RM × 1.07 ≈ training 1RM, which then anchors Blocks 2-4 percentage
+  work. Source precedent: Block 2 (2021) W4 ran "Back Squat —
+  1,3,3,3 @ MAX, 75,75,75%" — heavy top set then back-offs.
+    - W1D1 squat: 3RM pause squat (or comp back squat — user choice)
+    - W1D2 OHP: 5RM strict press (5RM is safer for OHP than 3RM)
+    - W1D3 DL: 3RM deadlift
+    - W1D4 bench: 5RM bench
+- **TEST WEEK (2026-09-14 → 2026-09-20):** true 1RM attempts after
+  Block 4 W5 deload. Source precedent: Block 8 W5D1 (2022) ran "Strict
+  Press — 4×3 @ 90,90,90,95%" as the peak. We extend to a true 1RM
+  attempt since this is the macrocycle peak.
+    - Mon 9/14: 1RM squat
+    - Wed 9/16: 1RM bench
+    - Fri 9/18: 1RM deadlift
+    - Spread to allow CNS recovery. OHP gets a 3RM (single-rep test
+      is high-risk for shoulder; 3RM is the strength-sport convention).
 
 ---
 
@@ -126,6 +147,8 @@ in YAML to avoid `ambiguous exact match` if duplicates exist.
 | Rope Slams                       | `8001b2fd-6984-4e6a-aa61-dcd437a5b53e` | reps_only   | other           | full_body  | Block 3 conditioning finisher                  |
 | Chest Supported External Rotation| `32d79e65-eb2a-4ae9-8561-f81a3c71bbad` | weight_reps | dumbbell        | shoulders  | Block 8 W5D2 rotator-cuff prehab               |
 | Single Leg Banded Hamstring Curl | `fafd204e-ed13-4ec5-a764-43e8743d3935` | reps_only   | resistance_band | hamstrings | Block 9 W1D5 posterior-chain accessory         |
+| Front Rack Walking Lunge         | `17c4f4ad-c0ae-4729-a34b-d450380ad250` | weight_reps | dumbbell        | quadriceps | Block 9 W1D2 (audit pass — was substituted)    |
+| Single Arm DB Push Press         | `c78158b0-3082-48b4-99e0-20d24fbe2d9f` | weight_reps | dumbbell        | shoulders  | Block 9 W1D5 (audit pass — was substituted)    |
 
 The Hevy API has no template DELETE endpoint, so any mistakenly-created
 duplicates have to be removed manually from the Hevy app (custom
@@ -161,6 +184,52 @@ duplicate has been fixed in `hevy.py`.
   "burnout", or descending (30→20→10), reach for these types instead
   of just adjusting rep counts.
 
+## Audit pass — 2026-05-11
+
+Full optimization review after initial Block 1 programming. Changes
+applied in-place (all 12 W1-W3 files re-pushed via `--update`):
+
+**Rule-compliance fixes** (don't silently substitute):
+- D1 Walking Lunge (Dumbbell) → custom **Front Rack Walking Lunge**.
+  Front-rack hits core + upper back, side-load doesn't. Different
+  stimulus.
+- D3 Push Press (barbell template) → custom **Single Arm DB Push
+  Press**. Anti-rotation core demand of single-arm differs from
+  bilateral barbell push press.
+
+**Volume / muscle-group gaps closed:**
+- D2 added direct **lateral delt** work (Lateral Raise (Dumbbell)
+  3×12 across W1/W2/W3) — block had ZERO lateral delt isolation.
+- D2 added direct **biceps** (Bicep Curl (Dumbbell) 3×12) — only D4
+  barbell curl had direct biceps work; now twice/week.
+- D2 dropped Goblet Squat (junk quad volume on a press day; D1
+  covers quads). Lateral Raise slot replaces it.
+- D2 W3 pull-up bumped 5×6 → 5×7 to actually progress on push week.
+
+**Source fidelity additions:**
+- D1 core circuit added **Copenhagen Plank** (custom created earlier
+  but unused). Block 7 W1D2 + Block 8 W5D1 both used it. 20s → 25s
+  → 30s side progression across W1-W3.
+
+**Load undershoot corrections:**
+- D1 Hip Thrust W1: 135 → 155 (W2 145→165, W3 155→175). 135 was
+  laughably light for an 11-yr-history lifter.
+- D4 Suitcase Deadlift W1: 53 → 71 lb (24kg → 32kg KB). W2: 62→79
+  (36kg), W3: 71→88 (40kg). The 24kg was barely worth carrying.
+- D4 Pause Squat (secondary): W1 115→145, W2 120→150, W3 125→155.
+  Now lands in Block 8 W5D2's actual range (165-180) while staying
+  below the D1 anchor.
+
+**Intentionally NOT changed:**
+- Z Press custom — created but reserved for Blocks 2-3 (Block 7
+  W1D1 + Block 8 W3D1 are the natural homes).
+- Rope Slams custom — reserved for Block 5 GPP reset (Block 3 D3
+  is the natural home).
+- Mon/Tue/Thu/Fri sequencing (bench-after-deadlift is acceptable
+  for Block 1's moderate loads).
+- W4 deload not re-edited — deload should *not* add accessory
+  volume; intent is recovery.
+
 ## Future-Claude TODO
 
 - **Collect Block 1 feedback after 6/5/2026** (block close): actual top
@@ -171,6 +240,10 @@ duplicate has been fixed in `hevy.py`.
   days/week, main lifts 5×5 / 4×5, big accessory volume. Day split:
   D1 squat / D2 deadlift or hip-thrust + athletic accessories /
   D3 strict press + bench + upper accessories.
+- **Block 2 W1 is the 3RM TEST WEEK.** Don't go straight into 5×5 —
+  open the block with 3RM (squat/DL) and 5RM (OHP/bench) tests so the
+  next 3 blocks have real %-anchors instead of RPE guesses. After W1
+  testing, recalibrate the rest of Block 2's loads to actual numbers.
 - **Load seeding for Block 2:** use W3 top sets from Block 1 as the new
   reference. Block 2 starting weight ≈ 90% of W3 top set (5×5 vs
   block-1's lower-rep top sets).
