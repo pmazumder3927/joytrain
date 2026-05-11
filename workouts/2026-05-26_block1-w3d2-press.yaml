@@ -47,9 +47,9 @@ exercises:
 
   - exercise: "Pull Up"
     rest_seconds: 150
-    notes: "5×6 (or +1 over W2). Add weight if all 5×6 are easy."
+    notes: "Push week — 5×7 (or 5×6 + weight if 5×6 strict was easy in W2)."
     sets:
-      - { count: 5, reps: 6 }
+      - { count: 5, reps: 7 }
 
   - superset: A
     exercise: "Shoulder Press (Dumbbell)"
@@ -65,11 +65,11 @@ exercises:
       - { count: 3, reps: 6, weight_lb: 130 }
 
   - superset: B
-    exercise: "Goblet Squat"
+    exercise: "Lateral Raise (Dumbbell)"
     rest_seconds: 60
-    notes: "3×10."
+    notes: "Push week — 3×12, +2-3 lb. Strict, slow eccentric."
     sets:
-      - { count: 3, reps: 10, weight_lb: 50 }
+      - { count: 3, reps: 12, weight_lb: 20 }
   - superset: B
     exercise: "Seated Cable Row - V Grip (Cable)"
     rest_seconds: 60
@@ -82,6 +82,12 @@ exercises:
     notes: "3×12. +2-3 lb."
     sets:
       - { count: 3, reps: 12, weight_lb: 20 }
+
+  - exercise: "Bicep Curl (Dumbbell)"
+    rest_seconds: 60
+    notes: "Push week — 3×12 strict, +2-5 lb."
+    sets:
+      - { count: 3, reps: 12, weight_lb: 40 }
 
   - superset: C
     exercise: "Face Pull"

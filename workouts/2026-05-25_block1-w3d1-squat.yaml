@@ -54,11 +54,11 @@ exercises:
     rest_seconds: 120
     notes: "3×10 (drop from 12 reps as load goes up). +10 lb over W2."
     sets:
-      - { count: 3, reps: 10, weight_lb: 155, rpe: 7.5 }
+      - { count: 3, reps: 10, weight_lb: 175, rpe: 7.5 }
 
-  - exercise: "Walking Lunge (Dumbbell)"
+  - exercise: "17c4f4ad-c0ae-4729-a34b-d450380ad250"  # Front Rack Walking Lunge
     rest_seconds: 90
-    notes: "Front-rack. 3×10 (down from 12). +5 lb."
+    notes: "Front rack DBs at shoulders. 3×10 (down from 12). +5 lb."
     sets:
       - { count: 3, reps: 10, weight_lb: 35 }
 
@@ -81,6 +81,13 @@ exercises:
     notes: "3×1:30 (up from 1:20). Weight on set 3 if easy."
     sets:
       - { count: 3, duration_seconds: 90 }
+
+  - superset: B
+    exercise: "397dd589-27a2-47d1-a864-f6a9a98f0b0c"  # Copenhagen Plank
+    rest_seconds: 45
+    notes: "Push-week 30s each side."
+    sets:
+      - { count: 3, duration_seconds: 30 }
 
   - superset: B
     exercise: "Sit Up (Weighted)"

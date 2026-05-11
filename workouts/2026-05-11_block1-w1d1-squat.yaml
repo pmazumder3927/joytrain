@@ -105,15 +105,18 @@ exercises:
     notes: |
       SECOND COMPOUND. Direct copy of Block 9 W1D2 slot — 3×12.
       Pause 1s at full extension every rep. Use a pad. RPE 7.
-      If 135 feels too easy, jump to 155 — glutes can take it.
+      Starting load bumped post-audit (was 135 — too light for an
+      11-yr-history lifter). If 155 grinds, scale down.
     sets:
-      - { count: 3, reps: 12, weight_lb: 135, rpe: 7 }
+      - { count: 3, reps: 12, weight_lb: 155, rpe: 7 }
 
-  - exercise: "Walking Lunge (Dumbbell)"
+  - exercise: "17c4f4ad-c0ae-4729-a34b-d450380ad250"  # Front Rack Walking Lunge (custom)
     rest_seconds: 90
     notes: |
-      Front-racked: DBs held at the shoulders, elbows up. 12 total reps
-      per set (6 each leg, alternating). Block 9 W1D2 spec.
+      DBs held at the shoulders, elbows up (front rack). 12 total reps
+      per set (6 each leg, alternating). Block 9 W1D2 spec named this
+      movement specifically — front rack matters because it hits core +
+      upper back, not just legs.
     sets:
       - { count: 3, reps: 12, weight_lb: 25 }
 
@@ -149,6 +152,18 @@ exercises:
       your back for set 3.
     sets:
       - { count: 3, duration_seconds: 80 }
+
+  - superset: B
+    exercise: "397dd589-27a2-47d1-a864-f6a9a98f0b0c"  # Copenhagen Plank
+    rest_seconds: 45
+    notes: |
+      Adductor + anti-rotation hold. Block 7 W1D2 and Block 8 W5D1 both
+      featured this. Side plank with the top foot resting on a bench;
+      bottom leg HOVERS, adductor of top leg presses into the bench.
+      20s each side per set. Start short; scale duration if you
+      can't hold form.
+    sets:
+      - { count: 3, duration_seconds: 20 }
 
   - superset: B
     exercise: "Sit Up (Weighted)"

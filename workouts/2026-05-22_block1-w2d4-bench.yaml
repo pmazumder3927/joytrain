@@ -55,7 +55,7 @@ exercises:
     rest_seconds: 150
     notes: "Secondary. 5×3 @ +5 lb over W1."
     sets:
-      - { count: 5, reps: 3, weight_lb: 120, rpe: 6 }
+      - { count: 5, reps: 3, weight_lb: 150, rpe: 6 }
 
   - exercise: "Bench Press (Dumbbell)"
     rest_seconds: 90
@@ -68,9 +68,9 @@ exercises:
 
   - exercise: "45e60221-6618-4055-9f14-9611e353df79"  # Suitcase Deadlift
     rest_seconds: 75
-    notes: "3×12 each side. Heavier KB if W1 was easy."
+    notes: "3×12 each side. +9 lb (next KB up, 36kg)."
     sets:
-      - { count: 3, reps: 24, weight_lb: 62 }
+      - { count: 3, reps: 24, weight_lb: 79 }
 
   - superset: A
     exercise: "Bicep Curl (Barbell)"

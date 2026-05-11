@@ -116,13 +116,13 @@ exercises:
     sets:
       - { count: 3, reps: 6, weight_lb: 45 }
 
-  - exercise: "Push Press"
+  - exercise: "c78158b0-3082-48b4-99e0-20d24fbe2d9f"  # Single Arm DB Push Press (custom)
     rest_seconds: 90
     notes: |
       Block 9 W1D5 spec "1 Arm DB Push Press — 3×5". Use ONE dumbbell
       held at the shoulder. Dip-drive-press, alternating arms. 5 reps
-      EACH arm. (Logging as Push Press since the movement pattern is
-      identical; pretend the bar is a single DB.)
+      EACH arm. Anti-rotation core demand makes this a different
+      stimulus than bilateral barbell push press.
     sets:
       - { count: 3, reps: 5, weight_lb: 35 }
 

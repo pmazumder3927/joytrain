@@ -65,9 +65,9 @@ exercises:
     sets:
       - { count: 3, reps: 6, weight_lb: 55 }
 
-  - exercise: "Push Press"
+  - exercise: "c78158b0-3082-48b4-99e0-20d24fbe2d9f"  # Single Arm DB Push Press
     rest_seconds: 90
-    notes: "Single DB push press. 5 each arm. +5 lb."
+    notes: "Single DB push press, alternating arms. 5 each arm. +5 lb."
     sets:
       - { count: 3, reps: 5, weight_lb: 45 }
 

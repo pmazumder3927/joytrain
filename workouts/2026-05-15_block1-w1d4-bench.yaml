@@ -90,11 +90,12 @@ exercises:
     rest_seconds: 150
     notes: |
       SECONDARY MOVEMENT. Block 8 W5D2 spec: 5×3 @ 165-180 lb (their
-      working weights). For W1 restart we use SUB-D1 weight — this is
-      volume to reinforce the pattern, not a strength stimulus.
+      working weights). Post-audit: bumping start from 115 → 145 to
+      land in Block 8's actual range; still safely below D1 anchor
+      (W1 D1 top set = 145 @ 8 reps).
       1s pause at bottom every rep.
     sets:
-      - { count: 5, reps: 3, weight_lb: 115, rpe: 6 }
+      - { count: 5, reps: 3, weight_lb: 145, rpe: 6 }
 
   - exercise: "Bench Press (Dumbbell)"
     rest_seconds: 90
@@ -114,9 +115,11 @@ exercises:
     notes: |
       Block 8 W5D2 spec "KB Suitcase Deadlift — 3×12". One heavy KB at
       one side. Deadlift it. STAY VERTICAL — that's the whole point.
-      12 each side per set.
+      12 each side per set. Post-audit: bumped from 53 → 71 lb (32kg
+      KB) — 24kg was too light for an 11-yr lifter's anti-lateral-
+      flexion baseline.
     sets:
-      - { count: 3, reps: 24, weight_lb: 53 }
+      - { count: 3, reps: 24, weight_lb: 71 }
 
   # ----- ARM CIRCUIT (Block 8 W5D2 heavy circuit) -----
 

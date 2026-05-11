@@ -114,13 +114,16 @@ exercises:
       - { count: 3, reps: 6, weight_lb: 110 }
 
   - superset: B
-    exercise: "Goblet Squat"
+    exercise: "Lateral Raise (Dumbbell)"
     rest_seconds: 60
     notes: |
-      Block 9 W1D4 spec "Goblet Squat — 3×10". Pure secondary volume.
-      Slow eccentric, elbows in. Lower-body filler on a press day.
+      Post-audit: replaces Block 9 W1D4 "Goblet Squat" slot — D1
+      already covers quads heavily, but the block had ZERO direct
+      lateral delt work. Block 1 (2021) and Block 7 W1D1 both featured
+      this. Slight forward lean, elbows slightly bent, raise to
+      shoulder height, slow eccentric.
     sets:
-      - { count: 3, reps: 10, weight_lb: 40 }
+      - { count: 3, reps: 12, weight_lb: 15 }
 
   - superset: B
     exercise: "Seated Cable Row - V Grip (Cable)"
@@ -138,6 +141,15 @@ exercises:
       bench, face down. Thumbs slightly up, drive elbows back/wide.
     sets:
       - { count: 3, reps: 12, weight_lb: 15 }
+
+  - exercise: "Bicep Curl (Dumbbell)"
+    rest_seconds: 60
+    notes: |
+      Post-audit: block had only 1 direct biceps set group per week
+      (D4 barbell curl). Adding D2 direct work — Block 1 (2021) D3
+      had "Crush Grip Bicep Curls — 3×12". 3×12, strict, no swing.
+    sets:
+      - { count: 3, reps: 12, weight_lb: 30 }
 
   # ----- FINISHER (Block 9 W1D4 spec, "Heavier" coach note) -----
 

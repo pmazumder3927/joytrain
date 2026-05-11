@@ -67,11 +67,11 @@ exercises:
       - { count: 3, reps: 6, weight_lb: 120 }
 
   - superset: B
-    exercise: "Goblet Squat"
+    exercise: "Lateral Raise (Dumbbell)"
     rest_seconds: 60
-    notes: "3×10 secondary volume."
+    notes: "Direct lat-delt work (replaces W1 goblet squat slot). 3×12, +2-3 lb."
     sets:
-      - { count: 3, reps: 10, weight_lb: 45 }
+      - { count: 3, reps: 12, weight_lb: 17 }
   - superset: B
     exercise: "Seated Cable Row - V Grip (Cable)"
     rest_seconds: 60
@@ -84,6 +84,12 @@ exercises:
     notes: "3×12, +2-3 lb."
     sets:
       - { count: 3, reps: 12, weight_lb: 17 }
+
+  - exercise: "Bicep Curl (Dumbbell)"
+    rest_seconds: 60
+    notes: "Direct biceps. 3×12, +5 lb."
+    sets:
+      - { count: 3, reps: 12, weight_lb: 35 }
 
   - superset: C
     exercise: "Face Pull"
